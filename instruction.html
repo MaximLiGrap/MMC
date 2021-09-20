@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(155501, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/155501" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script/jquery.js"></script>
+    <script defer src="script/swiper.js"></script>
+    <script defer src="script/mainall.js"></script>
+    <link rel="stylesheet" href="css/swipercss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="position-relative">
+            <div class="nav_menu-black"></div>
+            <div class="position-fixed head">
+                <div class="nav_menu position-relative px-2 px-sm-4">
+                    <div class="py-lg-3 wraper_logo"><a class="link_logo"
+                        href="index.html"><img class="logo logo-desk" src="img/logo.svg" alt=""><img class="logo logo-mobile" src="img/Asset1@3x.png" alt=""></a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark py-lg-3">
+                        <button id="nav_btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <div class="container-bar">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse px-0" id="navbarTogglerDemo03">
+                            <div class="d-flex border_title pb-2 px-0">
+                                <span class="nav_text">ООО «ММС Рус» — Официальный дистрибьютор Mitsubishi Motors </span>
+                                <ul id="up_nav" class="navbar-nav up_nav">
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Дилерские центры</a></li>
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Спецпредложения</a></li>
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Контакты</a></li>
+                                    <li id="loupe"><button id="search_btn"class="px-0 mb-3 mb-lg-0"><img
+                                                src="img/Loupe.svg" alt=""><span
+                                                class="btn_search">ПОИСК</span></button></li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-2 px-0 w-100">
+                                <ul id="down_nav" class="navbar-nav d-flex justify-content-between">
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_auto"
+                                            class="nav_item-style nav_item-btn px-0">АВТОМОБИЛИ</button>
+                                        <div id="dropdown_aria_auto" class="nav_dropdown ">
+                                            <div id="dropdown_auto" class="dropdown pt-lg-4 pt-2">
+                                                <p class="dropdown_title pt-lg-4 pt-2 col-6">Автомобили</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                                                                        <ul class="pt-lg-5 pt-1 col-lg-6 col-12 dropdown_list drop_auto">
+                                                        <li class="mb-lg-3 mb-1 link_asx"><a class="dropdown_link"
+                                                            href="asx.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/asx.png" alt=""> ASX</a></li>
+                                                    <li class="mb-lg-3 mb-1 "><a class="dropdown_link link_eclipse"
+                                                            href="eclipse.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/EclipsCrossImage.png" alt=""> Eclipse Cross</a></li>
+                                                    <li class="mb-lg-3 mb-1  "><a class="dropdown_link link_out"
+                                                            href="outlander.htm"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/outlander.png" alt=""> Outlander</a></li>
+                                                    <li class="mb-lg-3 mb-1"><a class="dropdown_link link_pjs" href="pjs.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/pajero-sport.png" alt=""> Pajero
+                                                            Sport</a></li>
+                                                    <li class="mb-lg-3 mb-1"><a class="dropdown_link link_out7" href="outlander7.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/outlander21-7seats.png" alt=""> Outlander 7 мест</a></li>
+                                                    <li class="mb-lg-3 mb-1" ><a class="dropdown_link link_l200" href="l200.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/l200car.png" alt=""> L200</a></li>
+                                                    </ul>
+                                                    <ul class="pt-lg-5 pt-1 col-lg-6 col-12 dropdown_list drop_auto">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="auto-v-nalichi.html">Автомобили в наличии</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Автомобили с пробегом</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href=""><img class="dimon-white"
+                                                                    src="img/image20-b.png" alt=""><img class="dimon-black"
+                                                                    src="img/image20-w.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_auto" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_buyer"
+                                            class="nav_item-style nav_item-btn px-0">ПОКУПАТЕЛЯМ</button>
+                                        <div id="dropdown_aria_buyer" class="nav_dropdown">
+                                            <div id="dropdown_buyer" class="dropdown dropdown_buyer pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">Покупателям</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 up_nav dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Серые
+                                                                дилеры</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Сравнение
+                                                                автомобилей</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Конфигуратор</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Записаться
+                                                                на тест-драйв</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Кредитование и страхование</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_buyer" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_servis" class="nav_item-style nav_item-btn px-0">СЕРВИС</button>
+                                        <div id="dropdown_aria_servis" class="nav_dropdown">
+                                            <div id="dropdown_servis" class="dropdown dropdown_servis pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">Сервис</p>
+
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="calc-to.html">Калькулятор ТО</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="calc-to.html">Запись на ТО</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="serv.html">Сервисная программа 3+</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="servis-program.html">Сервисные и отзывные кампании</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="zapasnie.html">Запасные части</a></li>
+
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="catalog-acces.html">Каталог аксессуаров</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="helper.html">Помощь на дорогах</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="warranty.html">Гарантия на автомобили</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="instruction.html">Инструкции по эксплуатации</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="windshield-replacement.html">Замена стекол</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <button id="btn_close_servis" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="mb-lg-0 mb-2"><button id="btn_mmcworld" class="nav_item-style nav_item-btn px-0">МИР MITSUBISHI MOTORS</button>
+                                        <div id="dropdown_aria_mmcworld" class="nav_dropdown">
+                                            <div id="dropdown_mmcworld" class="dropdown dropdown_mmcworld pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">МИР MITSUBISHI MOTORS</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 up_nav dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Новости</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Электронный ПТС</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Технологии Mitsubishi Motors</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Оригинальное масло и жидкости</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Как стать дилером</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Корпоративным клиентам</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_mmcworld" class="position-absolute btn_close"></button>
+                                        </div>
+
+                                    </li>
+                                    <li id="lkiqon" class="item_lk mb-3 mb-lg-0"><a class="link-lk nav_item-style" href="">ЛИЧНЫЙ
+                                            КАБИНЕТ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section>
+            <div id="search_block" class="search_place position-fixed d-none">
+                <div class="mx-auto d-flex search_place_wraper p-lg-4 p-2 col-md-8 col-12">  
+                        <span class="serch_text">ПОИСК</span>
+                        <form class="mx-auto search_form d-flex" action="">
+                            <input class="mx-auto search_input mx-3" placeholder="Введите поисковый запрос" type="text">
+                            <button><img class="loupe" src="img/Loupe.svg" alt=""></button>
+                        </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="d-flex justify-content-center">
+                <div id="scrolmenu" class="down_menu d-lg-flex col-md-8 col-6 visible container_inner">
+                    <ul id="menu_list" class="d-flex col-md-12 col-10 menu_list px-0">
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">КОНФИГУРАТОР</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">КРЕДИТНЫЙ КАЛЬКУЛЯТОР</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10"><button class="scrolmenu_btn">КАЛЬКУЛЯТОР
+                                ОСАГО</button></li>
+                    </ul>
+                </div>
+                <button id="hero_btn" class="down_menu_btn">...</button>
+            </div>
+        </section>
+        <section>
+            <div class="container  mb-7 container_pt text-upper">   
+                <div class="container_inner">
+                    <h1 class="title">Инструкции</h1>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/ec-30.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">Eclipce Cross</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/auto-cross/ec2018.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2018
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/auto-cross/ec2019.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2019
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/auto-cross/ec2020.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/auto-cross/ec2021.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2021
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/asx.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">ASX</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/asx/asx2014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/asx/asx2015.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2015
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/asx/asx2018.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2018
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/asx/asx2019.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2019
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/asx/asx2020_5.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020/5
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/asx/asx2021_5.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2021/5
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/out.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">Outlander</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/outlander/outlander2014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/outlander/outlander2016.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2016
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/outlander/outlander2017.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2017
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/outlander/outlander2019.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2019
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/outlander/outlander2020.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            <img class="col-12" src="img/phev.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">Outlander PHEV</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/phev/2014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/ps.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">Pajero Sport</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2012.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2012
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2016.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2016
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2017.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2017
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2018.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2018
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2019.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2019
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero-sport/ps2020.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/piv.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">Pajero</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2013.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2013
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2015.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2015
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2016.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2016
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2017.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2017
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2018.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2018
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/pajero/pajero2020.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/l200.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">L200</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002015.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2015
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002016.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2016
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002017.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2017
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002018.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2018
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002019.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2019
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002020.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/l200/l2002021.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2021
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/lans.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">Lancer</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/lancer/lancer2014.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2014
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/lancer/lancer2015.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2015
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/m-connect.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">MITSUBISHI CONNECT</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="">
+                                            <img src="img/pdf-30.png" alt="https://www.mitsubishi-motors.ru/files/manuals/m-connect/m-connect2017.pdf">
+                                            2017
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/m-connect/m-connect2018.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2018 - Eclipce Cross
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/m-connect/m-connect2019.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2019
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/display/da2021-4EC.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2021 - Eclipce Cross
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/display/da2021-noEC.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2021
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 acces_card">
+                            
+                            <img class="col-12" src="img/display.jpg" alt="">
+                            <div class="p-3">
+                                <p class="mb-3 text_500">MITSUBISHI DISPLAY AUDIO</p>
+                                <p class="mb-3">Модельный год:</p>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/display/da2016.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2016
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/display/da2017.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2017
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/display/da2020.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2020
+                                        </a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a class="link_red" href="https://www.mitsubishi-motors.ru/files/manuals/display/da2021.pdf">
+                                            <img src="img/pdf-30.png" alt="">
+                                            2021
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container block_info text-small">
+                <div class="container_inner">
+                    <p class="mb-3 text_500 letter">ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</p>
+                    <P class="mb-3">1. «Выгода до 25%» - максимальная разница между максимальными ценами перепродажи на оригинальные запасные части и сервисные услуги, действительными по состоянию на 1 августа 2020 года, и ценами перепродажи на оригинальные запасные части и сервисные услуги, приобретенными в соответствии с условиями «Программы 3+» MITSUBISHI до 30.06.2021 г. Предложение действительно при условии проведения работ по установке и/или замене запасных частей и смазочных материалов в официальном дилерском центре автомобилей MITSUBISHI. Скидка не распространяется на жидкости CVT, моторное масло, аксессуары и работы по их установке, на работы по установке запасных частей и аксессуаров, предоставленных клиентом, а также на ремонты автомобилей, собственниками которых являются юридические лица и/или плательщиками по которым являются юридические лица. Более подробную информацию Вы можете получить у официальных дилеров автомобилей MITSUBISHI. Предложение не является публичной офертой. Количество товаров ограничено.</P>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="brand_container">
+            <div class="container py-5 footer">
+                <div class=" mx-auto container_inner px-0 d-flex pb-2 mb-3">
+                    <img class=" mx-md-0 mx-auto" src="img/logo.svg" alt="">
+                    <ul class="footer_upmenu pt-5 px-0">
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Спецпредложения</a></li>
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Поиск дилера</a></li>
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Контакты</a></li>
+                        <li><a class="footer_topmenu-item" href="">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="container container_inner px-0 py-3 mx-auto footer_downmenu">
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">АВТОМОБИЛИ</a></li>
+                        <li><a class="footer_menu-item" href="asx.html">ASX</a></li>
+                        <li><a class="footer_menu-item" href="eclipse.html">Eclipse Cross</a></li>
+                        <li><a class="footer_menu-item" href="outlander.html">Outlander</a></li><li><a class="footer_menu-item" href="outlander7.html">Outlander 7-мест</a></li>
+                        <li><a class="footer_menu-item" href="pjs.html">Pajero Sport</a></li>
+                        
+                        <li><a class="footer_menu-item" href="l200.html">L200</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">ПОКУПАТЕЛЯМ</a></li>
+                        <li><a class="footer_menu-item" href="">Серые дилеры</a></li>
+                        <li><a class="footer_menu-item" href="">Сравнение автомобилей</a></li>
+                        <li><a class="footer_menu-item" href="">Конфигуратор</a></li>
+                        <li><a class="footer_menu-item" href="">Записаться на тест-драйв</a></li>
+                        <li><a class="footer_menu-item" href="">Кредитование и страхование</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">СЕРВИС</a></li>
+                        <li><a class="footer_menu-item" href="calc-to.html">Калькулятор ТО</a></li>
+                        <li><a class="footer_menu-item" href="calc-to.html">Запись на ТО</a></li>
+                        <li><a class="footer_menu-item" href="serv.html">Сервисная программа 3+</a></li>
+                        <li><a class="footer_menu-item" href="servis-program.html">Сервисные и отзывные кампании</a></li>
+                        <li><a class="footer_menu-item" href="zapasnie.html">Запасные части</a></li>
+                        <li><a class="footer_menu-item" href="catalog-acces.html">Каталог аксессуаров</a></li>
+                        <li><a class="footer_menu-item" href="helper.html">Помощь на дорогах</a></li>
+                        <li><a class="footer_menu-item" href="warranty.html">Гарантия на автомобили</a></li>
+                        <li><a class="footer_menu-item" href="instruction.html">Инструкции по эксплуатации</a></li>
+                        <li><a class="footer_menu-item" href="windshield-replacement.html">Замена стекол</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">МИР MITSUBISHI MOTORS</a></li>
+                        <li><a class="footer_menu-item" href="">Новости</a></li>
+                        <li><a class="footer_menu-item" href="">Электронный ПТС</a></li>
+                        <li><a class="footer_menu-item" href="">Технологии Mitsubishi Motors</a></li>
+                        <li><a class="footer_menu-item" href="">Оригинальное масло и жидкости</a></li>
+                        <li><a class="footer_menu-item" href="">Как стать дилером</a></li>
+                        <li><a class="footer_menu-item" href="">Корпоративным клиентам</a></li>
+                    </ul>
+                </div>
+
+                <div class="container container_inner px-0 py-3 mx-auto d-flex footer_contact">
+                    <p class="col-md-5 footer_text">Drive Your Ambition&nbsp;&mdash; Воплощение твоих амбиций. Данный интернет-сайт носит информационный характер и&nbsp;не&nbsp;является публичной офертой, определяемой положениями Статьи 437&nbsp;ГК РФ. Для получения подробной информации обращайтесь в&nbsp;официальные дилерские центры автомобилей MITSUBISHI или по&nbsp;телефону 8-800-200-05-25. &copy;&nbsp;ООО &laquo;ММС Рус&raquo;. 2019. Юридическая информация.</p>
+                    <div class="mx-md-3 mb-3 mx-lg-auto mx-auto">
+                        <h3 class="footer_title">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h3>
+                        <a class="mb-3 d-inline-block" href=""><img src="img/AppStore.png" alt=""></a>
+                        <a class="mb-3 d-inline-block" href=""><img src="img/GooglePlay.png" alt=""></a>
+                    </div>
+                    <div class="mb-3 mx-auto mx-md-0">
+                        <h3 class="footer_title">MITSUBISHI MOTORS В&nbsp;СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <div class="d-flex justify-content-between mx-auto">
+                            <a  href=""><img src="img/YouTube.svg" alt=""></a>
+                            <a  href=""><img src="img/Instagram.svg" alt=""></a>
+                            <a  href=""><img src="img/Facebook.svg" alt=""></a>
+                            <a  href=""><img src="img/Twitter.svg" alt=""></a>
+                            <a  href=""><img src="img/Vkontakte.svg" alt=""></a>
+                            <a  href=""><img src="img/Odnoklassniki.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

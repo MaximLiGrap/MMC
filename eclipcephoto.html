@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(155501, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/155501" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script defer src="script/jquery.js"></script>
+        <script defer src="script/swiper.js"></script>
+        <script defer src="script/mainall.js"></script>
+
+
+        <link rel="stylesheet" href="css/swipercss.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <div class="position-relative">
+            <div class="nav_menu-black"></div>
+            <div class="position-fixed head">
+                <div class="nav_menu position-relative px-2 px-sm-4">
+                    <div class="py-lg-3 wraper_logo"><a class="link_logo"
+                        href="index.html"><img class="logo logo-desk" src="img/logo.svg" alt=""><img class="logo logo-mobile" src="img/Asset1@3x.png" alt=""></a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark py-lg-3">
+                        <button id="nav_btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <div class="container-bar">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse px-0" id="navbarTogglerDemo03">
+                            <div class="d-flex border_title pb-2 px-0">
+                                <span class="nav_text">ООО «ММС Рус» — Официальный дистрибьютор Mitsubishi Motors </span>
+                                <ul id="up_nav" class="navbar-nav up_nav">
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Дилерские центры</a></li>
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Спецпредложения</a></li>
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Контакты</a></li>
+                                    <li id="loupe"><button id="search_btn"class="px-0 mb-3 mb-lg-0"><img
+                                                src="img/Loupe.svg" alt=""><span
+                                                class="btn_search">ПОИСК</span></button></li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-2 px-0 w-100">
+                                <ul id="down_nav" class="navbar-nav d-flex justify-content-between">
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_auto"
+                                            class="nav_item-style nav_item-btn px-0">АВТОМОБИЛИ</button>
+                                        <div id="dropdown_aria_auto" class="nav_dropdown ">
+                                            <div id="dropdown_auto" class="dropdown pt-lg-4 pt-2">
+                                                <p class="dropdown_title pt-lg-4 pt-2 col-6">Автомобили</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                                                                        <ul class="pt-lg-5 pt-1 col-lg-6 col-12 dropdown_list drop_auto">
+                                                        <li class="mb-lg-3 mb-1 link_asx"><a class="dropdown_link"
+                                                            href="asx.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/asx.png" alt=""> ASX</a></li>
+                                                    <li class="mb-lg-3 mb-1 "><a class="dropdown_link link_eclipse"
+                                                            href="eclipse.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/EclipsCrossImage.png" alt=""> Eclipse Cross</a></li>
+                                                    <li class="mb-lg-3 mb-1  "><a class="dropdown_link link_out"
+                                                            href="outlander.htm"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/outlander.png" alt=""> Outlander</a></li>
+                                                    <li class="mb-lg-3 mb-1"><a class="dropdown_link link_pjs" href="pjs.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/pajero-sport.png" alt=""> Pajero
+                                                            Sport</a></li>
+                                                    <li class="mb-lg-3 mb-1"><a class="dropdown_link link_out7" href="outlander7.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/outlander21-7seats.png" alt=""> Outlander 7 мест</a></li>
+                                                    <li class="mb-lg-3 mb-1" ><a class="dropdown_link link_l200" href="l200.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/l200car.png" alt=""> L200</a></li>
+                                                    </ul>
+                                                    <ul class="pt-lg-5 pt-1 col-lg-6 col-12 dropdown_list drop_auto">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="auto-v-nalichi.html">Автомобили в наличии</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Автомобили с пробегом</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href=""><img class="dimon-white"
+                                                                    src="img/image20-b.png" alt=""><img class="dimon-black"
+                                                                    src="img/image20-w.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_auto" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_buyer"
+                                            class="nav_item-style nav_item-btn px-0">ПОКУПАТЕЛЯМ</button>
+                                        <div id="dropdown_aria_buyer" class="nav_dropdown">
+                                            <div id="dropdown_buyer" class="dropdown dropdown_buyer pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">Покупателям</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 up_nav dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Серые
+                                                                дилеры</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Сравнение
+                                                                автомобилей</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Конфигуратор</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Записаться
+                                                                на тест-драйв</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Кредитование и страхование</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_buyer" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_servis" class="nav_item-style nav_item-btn px-0">СЕРВИС</button>
+                                        <div id="dropdown_aria_servis" class="nav_dropdown">
+                                            <div id="dropdown_servis" class="dropdown dropdown_servis pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">Сервис</p>
+
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="calc-to.html">Калькулятор ТО</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="calc-to.html">Запись на ТО</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="serv.html">Сервисная программа 3+</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="servis-program.html">Сервисные и отзывные кампании</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="zapasnie.html">Запасные части</a></li>
+
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="catalog-acces.html">Каталог аксессуаров</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="helper.html">Помощь на дорогах</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="warranty.html">Гарантия на автомобили</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="instruction.html">Инструкции по эксплуатации</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="windshield-replacement.html">Замена стекол</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <button id="btn_close_servis" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="mb-lg-0 mb-2"><button id="btn_mmcworld" class="nav_item-style nav_item-btn px-0">МИР MITSUBISHI MOTORS</button>
+                                        <div id="dropdown_aria_mmcworld" class="nav_dropdown">
+                                            <div id="dropdown_mmcworld" class="dropdown dropdown_mmcworld pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">МИР MITSUBISHI MOTORS</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 up_nav dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Новости</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Электронный ПТС</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Технологии Mitsubishi Motors</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Оригинальное масло и жидкости</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Как стать дилером</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Корпоративным клиентам</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_mmcworld" class="position-absolute btn_close"></button>
+                                        </div>
+
+                                    </li>
+                                    <li id="lkiqon" class="item_lk mb-3 mb-lg-0"><a class="link-lk nav_item-style" href="">ЛИЧНЫЙ
+                                            КАБИНЕТ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                
+            </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="search_block" class="search_place position-fixed d-none">
+                <div class="mx-auto d-flex search_place_wraper p-lg-4 p-2 col-md-8 col-12">  
+                        <span class="serch_text">ПОИСК</span>
+                        <form class="mx-auto search_form d-flex" action="">
+                            <input class="mx-auto search_input mx-3" placeholder="Введите поисковый запрос" type="text">
+                            <button><img class="loupe" src="img/Loupe.svg" alt=""></button>
+                        </form>
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="d-flex justify-content-center">
+                <div id="scrolmenu" class="down_menu d-lg-flex col-md-8 col-6 visible container_inner">
+                    <ul id="menu_list" class="d-flex col-md-12 col-10 menu_list px-0">
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">КОНФИГУРАТОР</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">КРЕДИТНЫЙ КАЛЬКУЛЯТОР</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10"><button class="scrolmenu_btn">КАЛЬКУЛЯТОР
+                                ОСАГО</button></li>
+                    </ul>
+                </div>
+                <button id="hero_btn" class="down_menu_btn">...</button>
+            </div>
+
+        </section>
+        <section>
+            <div class="pt-100">
+                <div id ="auto-menu-scrol" class="auto_hero-menu py-lg-3">
+                    <div class=" container px-lg-4 px-xxl-0 container_inner auto_hero-menu-inner">
+                        <ul class="hero-menu_list">
+                            <li class="hero-menu_item"><a class="hero-menu_link" href="eclipse.html">Об&nbsp;автомобиле</a></li>
+                            <li class="hero-menu_item"><a class="hero-menu_link" href="characteristics.html">Характеристики</a></li>
+                            <li class="hero-menu_item"><a class="hero-menu_link" href="configuration.html">Комплектации и&nbsp;цены</a></li>
+                            <li class="hero-menu_item"><a class="hero-menu_link" href="eclipcephoto.html">Фото и&nbsp;видео</a></li>
+                            <li class="hero-menu_item"><a class="hero-menu_link" href="acces.html">Аксессуары</a></li>
+                        </ul>
+                        <button disabled id="auto_hero-menu-btn" class="hero-menu_btn" data-mobile="false"><img class="hero-menu_btn-img" src="img/EclipseCross/eclipseBlack.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">   
+                <div class="container_inner">
+                    <h1 class="title">Фото и&nbsp;видео</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner">
+                    <h3 class="title-small text_500 mb-5">Фотографии экстерьера</h3>
+                    <div class="photo_out-slider" data-mobile="false">
+                        <div class="photo_out-wrap photo_wrap">   
+                            <div class="out-img out-img59"><img class="imge-out" src="img/EclipseCross/EC-gal/ex02/01.jpg" alt=""></div>
+                            <div class="out-img out-img38"><img class="imge-out" src="img/EclipseCross/EC-gal/ex02/02.jpg" alt=""></div>        
+                            <div class="out-img out-img38"><img class="imge-out" src="img/EclipseCross/EC-gal/ex02/03.jpg" alt=""></div>
+                            <div class="out-img out-img59"><img class="imge-out" src="img/EclipseCross/EC-gal/ex02/04.jpg" alt=""></div>
+                            <div class="out-img out-img49"><img class="imge-out" src="img/EclipseCross/EC-gal/ex02/05.jpg" alt=""></div>
+                            <div class="out-img out-img49"><img class="imge-out" src="img/EclipseCross/EC-gal/ex02/06.jpg" alt=""></div>
+                        </div>
+                        <div id="photo_out-pagination" class="photo_out-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+<div id="myModal" class="modal">
+  <!-- Модальное содержание -->
+  <div class="modal-content position-relative">
+    <span class="close">&times;</span>
+    <div class="galery">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="galery_wrapper"></div>
+    </div>
+  </div>
+
+</div>
+        </section>
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner">
+                    <h3 class="title-small text_500 mb-5">Фотографии интерьера</h3>
+                    <div class="photo_in-slider" data-mobile="false">
+                        <div class="photo_in-wrap photo_wrap">
+                            <div class="in-img in-img100"><img class="imge-in" src="img/EclipseCross/EC-gal/in02/01.jpg" alt=""></div>
+                            <div class="in-img in-img28"><img class="imge-in" src="img/EclipseCross/EC-gal/in02/02.jpg" alt=""></div>
+                            <div class="in-img in-img38"><img class="imge-in" src="img/EclipseCross/EC-gal/in02/03.jpg" alt=""></div>
+                            <div class="in-img in-img28"><img class="imge-in" src="img/EclipseCross/EC-gal/in02/04.jpg" alt=""></div>
+                            <div class="in-img in-img49"><img class="imge-in" src="img/EclipseCross/EC-gal/in02/05.jpg" alt=""></div>
+                            <div class="in-img in-img49"><img class="imge-in" src="img/EclipseCross/EC-gal/in02/06.jpg" alt=""></div>
+                        </div>
+                        <div id="photo_in-pagination" class="photo_in-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner">
+                    <h3 class="title-small text_500 mb-5">Видео</h3>
+                    <div class="video_slider">
+                        <div class="video_wrap">
+                            <div class="video_card"><iframe class="video"  src="https://www.youtube.com/embed/a6bc-jr0vDc?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="video_card"><iframe class="video" src="https://www.youtube.com/embed/LVTHFer0nL4?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="video_card"><iframe class="video" src="https://www.youtube.com/embed/OTYku2PAGr0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="video_card"><iframe class="video" src="https://www.youtube.com/embed/o4Yd__XSabw?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        </div>
+                        <div id="video_pagination" class="video_pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+        </section>
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner">
+                    <div class="block_auto-pdf">
+                        <div class="auto-pdf_wraper">
+                            <img class="mb-3 auto-pdf-img d-block" src="img/EclipseCross/PDF40.svg" alt="">
+                            <p class="text_500 text-big mb-5">Каталог Eclipse Cross</p>
+                            <a href="https://www.mitsubishi-motors.ru/files/pdf/catalogs/eclipse-cross.pdf" class="auto-pdf-btn btn_all btn bg_cold-gray ">СКАЧАТЬ</a>
+                        </div>
+                        <div class="auto-pdf_wraper">
+                            <img class="mb-3 auto-pdf-img d-block" src="img/EclipseCross/PDF40.svg" alt="">
+                            <p class="text_500 text-big mb-5">Спецификации и цены</p>
+                            <a href="https://www.mitsubishi-motors.ru/pricegeneratorapi/price/?car_id=600a6a1f807f2d194f8b4567" class="auto-pdf-btn btn_all btn bg_cold-gray ">СКАЧАТЬ</a>
+                        </div>
+                        <div class="auto-pdf_wraper">
+                            <img class="mb-3 auto-pdf-img d-block" src="img/EclipseCross/PDF40.svg" alt="">
+                            <p class="text_500 text-big mb-5">Руководство пользователя</p>
+                            <a href="https://www.mitsubishi-motors.ru/files/manuals/eclipce-cross/ec2021.pdf" class="auto-pdf-btn btn_all btn bg_cold-gray ">СКАЧАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container block_info text-small">
+                <div class="container_inner">
+                    <p class="mb-3  text_500">ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</p>
+                    <P class="mb-3 ">1) Стоимость автомобиля Mitsubishi Outlander c&nbsp;01.06.2021 по&nbsp;30.06.2021&nbsp;г., а/м 2020,5 модельного года, 2021 года выпуска в&nbsp;комплектации 2.0 Inform 2WD CVT (Информ 2ВД СВТ), без учета доплаты за&nbsp;цвет. Предложение ограничено, о&nbsp;наличии а/м уточняйте в&nbsp;официальных дилерских центрах. Не&nbsp;является публичной офертой. На&nbsp;фотографии изображен а/м Mitsubishi Outlander Ultimate&nbsp;2.4&nbsp;CVT (Алтимейт&nbsp;2,4&nbsp;СВТ).</P>
+                    <P>2) Условия кредитования на&nbsp;покупку автомобиля (а/м) Mitsubishi Outlander&nbsp;2.0 Intense+ CVT, 2.0 Intense+ CVT 4WD, 2.0 Intense+ CVT 4WD SAM, 2.0 Instyle CVT 4WD и&nbsp;2.0 Inform CVT, 2.0 Invite CVT, 2.0 Invite CVT 4WD, 2.0 Invite CVT 4WD SAM, 2.0 Intense+ CVT 4WD 7seats: Банк-кредитор АО&nbsp;МС&nbsp;Банк Рус, лицензия ЦБ&nbsp;РФ &#8470;&nbsp;2789. Мин. /макс. сумма кредита&nbsp;&mdash; 150&nbsp;000&nbsp;руб. /114,99% от&nbsp;стоимости а/м, валюта&nbsp;&mdash; рубли РФ. Первоначальный взнос&nbsp;&mdash; от&nbsp;20% от&nbsp;цены а/м, срок кредита &mdash;36&nbsp;мес., процентная ставка в&nbsp;кредитном договоре&nbsp;&mdash; 6,9% для комплектаций 2.0 Intense+ CVT, 2.0 Intense+ CVT 4WD, 2.0 Intense+ CVT 4WD SAM, 2.0 Instyle CVT 4WD и&nbsp;9,9% для комплектаций 2.0 Inform CVT, 2.0 Invite CVT, 2.0 Invite CVT 4WD, 2.0 Invite CVT 4WD SAM, 2.0 Intense+ CVT 4WD 7seats, макс. размер последнего платежа&nbsp;&mdash; до&nbsp;55% от&nbsp;цены а/м. Ставки действуют при приобретении услуги страхования жизни и&nbsp;здоровья, утраты трудоспособности и&nbsp;оформлении полиса КАСКО при страховании по&nbsp;рискам &laquo;ущерб&raquo; и&nbsp;&laquo;угон а/м&raquo; (КАСКО) на&nbsp;полную стоимость а/м в&nbsp;любой страховой компании из&nbsp;перечня, размещенного на&nbsp;сайте www.mcbankrus.ru. Без услуги &laquo;Защита платежей&raquo; и&nbsp;без оформления полиса КАСКО ставка увеличивается на&nbsp;8% для комплектаций 2.0 Intense+ CVT, 2.0 Intense+ CVT 4WD, 2.0 Intense+ CVT 4WD SAM, 2.0 Instyle CVT 4WD и&nbsp;на&nbsp;5% для комплектаций 2.0 Inform CVT, 2.0 Invite CVT, 2.0 Invite CVT 4WD, 2.0 Invite CVT 4WD SAM, 2.0 Intense+ CVT 4WD 7seats. Обеспечение по&nbsp;кредиту&nbsp;&mdash; залог приобретаемого а/м. Условия кредитования на&nbsp;покупку автомобиля (а/м) Mitsubishi Outlander комплектаций 2.4 и&nbsp;3.0: Банк-кредитор АО&nbsp;МС&nbsp;Банк Рус, лицензия ЦБ&nbsp;РФ &#8470;&nbsp;2789. Мин. /макс. сумма кредита&nbsp;&mdash; 150&nbsp;000&nbsp;руб. /114,99% от&nbsp;стоимости а/м, валюта&nbsp;&mdash; рубли РФ. Первоначальный взнос&nbsp;&mdash; от&nbsp;20% от&nbsp;цены а/м, срок кредита&nbsp;&mdash; 36&nbsp;мес., процентная ставка в&nbsp;кредитном договоре&nbsp;&mdash; 9,9%, макс. размер последнего платежа&nbsp;&mdash; до&nbsp;55% от&nbsp;цены а/м. Ставка действует при приобретении услуги страхования жизни и&nbsp;здоровья, утраты трудоспособности и&nbsp;оформлении полиса КАСКО при страховании по&nbsp;рискам &laquo;ущерб&raquo; и&nbsp;&laquo;угон а/м&raquo; (КАСКО) на&nbsp;полную стоимость а/м в&nbsp;любой страховой компании из&nbsp;перечня, размещенного на&nbsp;сайте www.mcbankrus.ru. Без услуги &laquo;Защита платежей&raquo; и&nbsp;без оформления полиса КАСКО ставка увеличивается на&nbsp;4,5%. Обеспечение по&nbsp;кредиту&nbsp;&mdash; залог приобретаемого а/м. Предложение действует с&nbsp;27.05.2021 по&nbsp;04.06.2021&nbsp;г., носит информационный характер, не&nbsp;является публичной офертой. Подробнее по&nbsp;тел.&nbsp;8&nbsp;800 770-05-70.</P>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="brand_container">
+            <div class="container py-5 footer">
+                <div class=" mx-auto container_inner px-0 d-flex pb-2 mb-3">
+                    <img class=" mx-md-0 mx-auto" src="img/logo.svg" alt="">
+                    <ul class="footer_upmenu pt-5 px-0">
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Спецпредложения</a></li>
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Поиск дилера</a></li>
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Контакты</a></li>
+                        <li><a class="footer_topmenu-item" href="">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="container container_inner px-0 py-3 mx-auto footer_downmenu">
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">АВТОМОБИЛИ</a></li>
+                        <li><a class="footer_menu-item" href="asx.html">ASX</a></li>
+                        <li><a class="footer_menu-item" href="eclipse.html">Eclipse Cross</a></li>
+                        <li><a class="footer_menu-item" href="outlander.html">Outlander</a></li><li><a class="footer_menu-item" href="outlander7.html">Outlander 7-мест</a></li>
+                        <li><a class="footer_menu-item" href="pjs.html">Pajero Sport</a></li>
+                        
+                        <li><a class="footer_menu-item" href="l200.html">L200</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">ПОКУПАТЕЛЯМ</a></li>
+                        <li><a class="footer_menu-item" href="">Серые дилеры</a></li>
+                        <li><a class="footer_menu-item" href="">Сравнение автомобилей</a></li>
+                        <li><a class="footer_menu-item" href="">Конфигуратор</a></li>
+                        <li><a class="footer_menu-item" href="">Записаться на тест-драйв</a></li>
+                        <li><a class="footer_menu-item" href="">Кредитование и страхование</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">СЕРВИС</a></li>
+                        <li><a class="footer_menu-item" href="calc-to.html">Калькулятор ТО</a></li>
+                        <li><a class="footer_menu-item" href="calc-to.html">Запись на ТО</a></li>
+                        <li><a class="footer_menu-item" href="serv.html">Сервисная программа 3+</a></li>
+                        <li><a class="footer_menu-item" href="servis-program.html">Сервисные и отзывные кампании</a></li>
+                        <li><a class="footer_menu-item" href="zapasnie.html">Запасные части</a></li>
+                        <li><a class="footer_menu-item" href="catalog-acces.html">Каталог аксессуаров</a></li>
+                        <li><a class="footer_menu-item" href="helper.html">Помощь на дорогах</a></li>
+                        <li><a class="footer_menu-item" href="warranty.html">Гарантия на автомобили</a></li>
+                        <li><a class="footer_menu-item" href="instruction.html">Инструкции по эксплуатации</a></li>
+                        <li><a class="footer_menu-item" href="windshield-replacement.html">Замена стекол</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">МИР MITSUBISHI MOTORS</a></li>
+                        <li><a class="footer_menu-item" href="">Новости</a></li>
+                        <li><a class="footer_menu-item" href="">Электронный ПТС</a></li>
+                        <li><a class="footer_menu-item" href="">Технологии Mitsubishi Motors</a></li>
+                        <li><a class="footer_menu-item" href="">Оригинальное масло и жидкости</a></li>
+                        <li><a class="footer_menu-item" href="">Как стать дилером</a></li>
+                        <li><a class="footer_menu-item" href="">Корпоративным клиентам</a></li>
+                    </ul>
+                </div>
+
+                <div class="container container_inner px-0 py-3 mx-auto d-flex footer_contact">
+                    <p class="col-md-5 footer_text">Drive Your Ambition&nbsp;&mdash; Воплощение твоих амбиций. Данный интернет-сайт носит информационный характер и&nbsp;не&nbsp;является публичной офертой, определяемой положениями Статьи 437&nbsp;ГК РФ. Для получения подробной информации обращайтесь в&nbsp;официальные дилерские центры автомобилей MITSUBISHI или по&nbsp;телефону 8-800-200-05-25. &copy;&nbsp;ООО &laquo;ММС Рус&raquo;. 2019. Юридическая информация.</p>
+                    <div class="mx-md-3 mb-3 mx-lg-auto mx-auto">
+                        <h3 class="footer_title">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h3>
+                        <a class="mb-3 d-inline-block" href=""><img src="img/AppStore.png" alt=""></a>
+                        <a class="mb-3 d-inline-block" href=""><img src="img/GooglePlay.png" alt=""></a>
+                    </div>
+                    <div class="mb-3 mx-auto mx-md-0">
+                        <h3 class="footer_title">MITSUBISHI MOTORS В&nbsp;СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <div class="d-flex justify-content-between mx-auto">
+                            <a  href=""><img src="img/YouTube.svg" alt=""></a>
+                            <a  href=""><img src="img/Instagram.svg" alt=""></a>
+                            <a  href=""><img src="img/Facebook.svg" alt=""></a>
+                            <a  href=""><img src="img/Twitter.svg" alt=""></a>
+                            <a  href=""><img src="img/Vkontakte.svg" alt=""></a>
+                            <a  href=""><img src="img/Odnoklassniki.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
