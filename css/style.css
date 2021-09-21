@@ -32,18 +32,12 @@ img {
     max-width: 100%;
 }
 
-button:focus {
-    outline: unset;
-}
 
-input:focus {
-    outline: unset;
-}
 
-select:focus {
-    outline: unset;
-}
-
+*:focus,*:active, *:hover {
+    outline: none !important;
+    box-shadow: none !important;
+ }
 
 
 ul {
