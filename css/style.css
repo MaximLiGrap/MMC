@@ -439,6 +439,8 @@ p {
 }
 
 
+
+
 .up_nav{
     margin-left: auto;
 } 
@@ -2465,8 +2467,35 @@ thead {
     margin-top: -100px;
 }
 
-.old-auto_photo-wrapper {
+
+.diler-name {
+    position: absolute;
+    right: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 25px;
+    color: white;
+    height: 80%;
+}
+
+.old-auto_photo-container {
     overflow: hidden;
+    position: relative;
+}
+
+.old-auto_photo-wrapper {
+    flex-wrap: nowrap;
+}
+
+.old-auto_photo {
+    flex: 0 0 auto;
+}
+
+.swiper-old-auto-button-next, .swiper-old-auto-button-prev {
+    color: black;
+}
+
+.swiper-old-auto-button-next::after, .swiper-old-auto-button-prev::after {
+    font-size: 1vw;
 }
     
 @media (max-width: 1600px) {
@@ -2813,6 +2842,7 @@ thead {
         -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
         transform: rotate(45deg) translate(-6px, -6px) ;
       }
+
 
     .navbar-toggler:focus {
         box-shadow: unset;
@@ -3195,26 +3225,55 @@ thead {
 
     .hero-menu_btn {
         position: relative;
-    }
-    .hero-menu_btn::after {
-        margin-top: 5px;
-        margin-left: 10px;
-        content: '';
-        position: absolute;
-        right: -30px;
-        border: solid #E30000;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 5px;
-        transform: rotate(45deg);
-        /* transition: rotate 0.3s linear; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
     }
 
-    .hero-menu_btn.active_btn::after {
-        transform: rotate(225deg);
-        /* border: solid var(--color-active-btn); */
-        border-width: 0 2px 2px 0;
-       
+    .bar1-auto-hiden, .bar2-auto-hiden, .bar3-auto-hiden {
+        margin-left: auto;
+        width: 35px;
+        height: 2px;
+        background-color: #F5F5F5;
+        margin-bottom: 6px;
+        transition: 0.4s;
+    }
+
+    .bar3-auto-hiden {
+        margin-bottom: 0;
+    }
+
+
+    .bar1-auto, .bar2-auto, .bar3-auto {
+        margin-left: auto;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        margin-bottom: 6px;
+        transition: 0.4s;
+    }
+
+          /* Rotate first bar */
+          .change .bar1-auto {
+            -webkit-transform: rotate(-45deg) translate(-7px, 5px) ;
+            transform: rotate(-45deg) translate(-6px, 5px) ;
+          }
+          
+          /* Fade out the second bar */
+          .change .bar2-auto {
+            opacity: 0;
+          }
+          
+          /* Rotate last bar */
+          .change .bar3-auto {
+            -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+            transform: rotate(45deg) translate(-6px, -6px) ;
+          }
+
+    .bar3-auto {
+        margin-bottom: 0; 
     }
 
     .auto_cards {
@@ -3529,6 +3588,12 @@ thead {
 
 @media (max-width: 697px) {
 
+    .diler-name {
+        position: unset;
+        
+    }
+       
+
     .dropdown_list {
         -moz-column-count: 1; /* Firefox */
         -webkit-column-count: 1; /* Safari and Chrome */
@@ -3809,7 +3874,7 @@ thead {
     }
 
     .hero-menu_btn-img {
-        max-width: 80%;
+        max-width: 70%;
         max-height: 20px;
         
     }

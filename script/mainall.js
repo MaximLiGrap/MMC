@@ -32,6 +32,64 @@ if (document.querySelector('.pjs_color-wrapper')) {
 }
 
 
+// автомобили с пробегом
+if(document.querySelector('.old-auto_photo-container')) {
+    var oldAuto = new Swiper('.old-auto_photo-container', {
+        slideClass: 'old-auto_photo',
+        wrapperClass: 'old-auto_photo-wrapper',
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+                centeredSlides: true,
+        navigation: {
+            nextEl: ".swiper-old-auto-button-next",
+            prevEl: ".swiper-old-auto-button-prev",
+        },
+    })
+}
+
+if (document.querySelector('.old-auto_photo-wrapper')) {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    document.querySelector('.old-auto_photo-wrapper').addEventListener('click', function(event){
+        if(event.target.closest('.old-auto_photo')) {
+            let index = [...document.querySelectorAll('.old-auto_photo-img')].indexOf(event.target);
+            console.log(index)
+            for(let img of document.querySelectorAll('.old-auto_photo-img')) {
+                let galeryImg = document.createElement('img');
+                galeryImg.classList.add('galery-img')
+                galeryImg.setAttribute('src', img.src)
+                document.querySelector('.galery_wrapper').append(galeryImg)
+            }
+            document.querySelector('.galery_wrapper').classList.add('photo_out-wrap-galery')
+            document.querySelector('.galery').classList.add('photo_out-slider-galery')
+            modal.style.display = "block";
+            mobileSliderGalery (index)
+        }
+    })
+    
+// Закрыть модалку при клике на крестик
+    span.onclick = function() {
+        modal.style.display = "none";
+        eclipcePhotoGalery.destroy()
+        cleanTable(document.querySelector('.galery_wrapper'))
+    }
+
+    // Закрыть модалку при клике вне
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        eclipcePhotoGalery.destroy()
+        cleanTable(document.querySelector('.galery_wrapper'))
+        }
+    }
+}
+
+
+
+
+
 
 
 const iqonNav = document.querySelector('.container-bar')
@@ -238,6 +296,7 @@ const heroMenuList = document.querySelector('.hero-menu_list');
 
 if (eclipceCrossHeroBtn && heroMenuList) {
     eclipceCrossHeroBtn.addEventListener('click', function(){
+        document.querySelector('.container-bar-auto').classList.toggle("change")
         heroMenuList.classList.toggle('d-block');
         eclipceCrossHeroBtn.classList.toggle('active_btn');
     
