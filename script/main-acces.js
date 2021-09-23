@@ -1,90 +1,60 @@
-const checkboxInt = document.querySelector('.check_int');
-const checkboxExt = document.querySelector('.check_ext');
-const checkboxTransport = document.querySelector('.check_transport');
-const checkboxSafety = document.querySelector('.check_safety');
-const checkboxSouvenir = document.querySelector('.check_souvenir');
-const checkboxRug = document.querySelector('.check_rug');
-
-function searchCard (blockCarad) {
-    if (document.querySelector(blockCarad) !== null) 
-    return document.querySelector(blockCarad);
-}
-
-const cardInt =  searchCard ('.container-card-int')
-
-const cardExt = searchCard ('.container-card-exterior');
-
-const cardTransport = searchCard ('.container-card-transport');
-
-const cardSafety = searchCard ('.container-card-safety');
-
-const cardSouvenir = searchCard ('.container-card-souvenir');
-
-const cardRug = searchCard ('.container-card-rug');
-
-
-let cards = document.querySelectorAll('.container-card');
-let arrayCheckboxCadrs = Array.from(cards);
-
-function showAllCards () {
-    if (arrayCheckboxCadrs.every(elem => elem.classList.contains('d-none'))){
-        for(cardBlock of cards) {
-        cardBlock.classList.remove('d-none');
+function get_filtered_data(auto, categories) {
+    $.post('/ajax/accessories/', {
+        'data': {
+            'get': 'filtered_data',
+            'auto': auto,
+            'category': categories,
         }
-    }
-}
+    }, function(data) {
+        if (data.error == 0) {
+            $('#filter_data').html(data.html);
+            $('.container .container_inner .container-card .card-checkbox').each(function() {
+                const idSlider = $(this).attr('id')
+                const sliderInt = searchCard(idSlider);
+                let mySwiperInt;
+                if (sliderInt !== undefined) {
+                    newSwiperSlid(mySwiperInt, sliderInt)
+                }
 
-function selectperson (item) {
-    let arr = document.getElementsByClassName("container-card");
-      for(var i=0; i<arr.length; i++){
-      if(arr[i].dataset.change == "false") {
-        arr[i].classList.add('d-none');
-      }
-      }
-      item.classList.remove('d-none');
-      item.dataset.change = "true"
-}
-
-function checked (checkBox, card) {
-    if(card !== undefined){
-        if(checkBox.checked) {
-            selectperson (card)
-        } else {
-            card.classList.add('d-none');
-            card.dataset.change = "false";
+            });
         }
-        showAllCards ()
-    }
+    });
 }
-// действие при клике по чекбоксу, скопировать если будет новый
-checkboxInt.addEventListener('change', function(){
-    checked (checkboxInt, cardInt)
+
+function searchCard(blockCarad) {
+    if (document.getElementById(blockCarad) !== null)
+        return document.getElementById(blockCarad);
+}
+
+var categories = [];
+$('.container .container_inner .checkbox__box .checkbox__label input:checked').each(function() {
+    categories.push($(this).val());
 })
 
-checkboxExt.addEventListener('change', function(){
-    checked (checkboxExt, cardExt)
-})
+var auto = $(".title").attr('data-id');
 
-checkboxTransport.addEventListener('change', function(){
-    checked (checkboxTransport, cardTransport)
-})
+get_filtered_data(auto, categories)
 
-checkboxSafety.addEventListener('change', function(){
-    checked (checkboxSafety, cardSafety)
-})
+$('.check').click(function() {
+    var categoriesCheckUncheck = [];
+    $('.container .container_inner .checkbox__box .checkbox__label input:checked').each(function() {
+        categoriesCheckUncheck.push($(this).val());
+    })
+    if ($(this).is(':checked')) {
+        get_filtered_data(auto, categoriesCheckUncheck)
+    } else {
+        get_filtered_data(auto, categoriesCheckUncheck)
+    }
 
-checkboxSouvenir.addEventListener('change', function(){
-    checked (checkboxSouvenir, cardSouvenir)
-})
+});
 
-checkboxRug.addEventListener('change', function(){
-    checked (checkboxRug, cardRug)
-})
 // Функция вызова слайдера
-function newSwiperSlid (mySwiper, slider) {
+function newSwiperSlid(mySwiper, slider) {
+    //console.log(slider);
     let mySwiperInt = mySwiper;
-    function mobileSlider () {   
-        if(window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
+
+    function mobileSlider() {
+        if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
             mySwiperInt = new Swiper(slider, {
                 slideClass: 'card_acces',
                 wrapperClass: 'card_wrap',
@@ -93,73 +63,20 @@ function newSwiperSlid (mySwiper, slider) {
                 slidesPerView: 1.1,
                 spaceBetween: 20,
             })
-           
 
-        slider.dataset.mobile = 'true';
+
+            slider.dataset.mobile = 'true';
         }
 
-        if(window.innerWidth > 768) {
+        if (window.innerWidth > 768) {
             slider.dataset.mobile = 'false';
             if (slider.classList.contains('swiper-container-initialized')) {
                 mySwiperInt.destroy();
             }
         }
     }
-    mobileSlider ()
-    window.addEventListener('resize', () =>{
-        mobileSlider ()
+    mobileSlider()
+    window.addEventListener('resize', () => {
+        mobileSlider()
     })
 }
-
-const sliderInt = searchCard('.card-int');
-let mySwiperInt;
-if (sliderInt !== undefined) {
-    newSwiperSlid (mySwiperInt, sliderInt)
-}
-
-
-const sliderExt = searchCard('.card-exterior');
-let mySwiperExt;
-if (sliderInt !== undefined) {
-    newSwiperSlid (mySwiperExt, sliderExt)
-}
-
-
-const sliderTransport = searchCard('.card-transport');
-let mySwiperTransport;
-if (sliderTransport !== undefined) {
-    newSwiperSlid (mySwiperTransport, sliderTransport)
-}
-
-
-
-const sliderSafety = searchCard('.card-safety');
-let mySwiperSafety;
-if (sliderSafety !== undefined) {
-    newSwiperSlid (mySwiperSafety, sliderSafety)
-}
-
-
-const sliderSouvenir = searchCard('.card-souvenir');
-let mySwiperSouvenir;
-if (sliderSouvenir !== undefined) {
-    newSwiperSlid (mySwiperSouvenir, sliderSouvenir)
-}
-
-
-const sliderRug = searchCard('.card-rug');
-let mySwiperRug;
-if (sliderRug !== undefined) {
-    newSwiperSlid (mySwipeRug, sliderRug)
-}
-
-
-
-
-function newSwiper (swiperContainer , nameFunction) {
-    if (swiperContainer !== undefined) {
-        nameFunction ()
-    }
-}
-
-

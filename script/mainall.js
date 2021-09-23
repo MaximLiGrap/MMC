@@ -328,70 +328,6 @@ if (eclipceCrossHeroBtn && heroMenuList) {
 
 
 
-
-
-
-// Функция вызова слайдера
-function newSwiperSlid (mySwiper, slider) {
-    let mySwiperInt = mySwiper;
-    function mobileSlider () {   
-        if(window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
-            mySwiperInt = new Swiper(slider, {
-                slideClass: 'card_acces',
-                wrapperClass: 'card_wrap',
-                slidesPerGroup: 1,
-                centeredSlides: true,
-                slidesPerView: 1.1,
-                spaceBetween: 20,
-            })
-           
-
-        slider.dataset.mobile = 'true';
-        }
-
-        if(window.innerWidth > 768) {
-            slider.dataset.mobile = 'false';
-            if (slider.classList.contains('swiper-container-initialized')) {
-                mySwiperInt.destroy();
-            }
-        }
-    }
-    mobileSlider ()
-    window.addEventListener('resize', () =>{
-        mobileSlider ()
-    })
-}
-
-// var sliderInt = searchCard('.card-int');
-// let mySwiperInt;
-// if (sliderInt !== undefined) {
-//     newSwiperSlid (mySwiperInt, sliderInt)
-// }
-
-
-
-// var swiperHero = new Swiper(".mySwiperHero", {
-//     speed: 1600,
-//     slidesPerView: 'auto',
-//     centeredSlides: true,
-//     spaceBetween: 15,
-//     loop: true,
-//     navigation: {
-//         nextEl: ".swiper-button-next-hero",
-//         prevEl: ".swiper-button-prev-hero",
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     scrollbar: { el: '.swiper-scrollbar' },
-//     autoplay: {
-//         delay: 5000,
-//         disableOnInteraction: false
-//     }
-// });
-
-
 function newSwiperSlidFull (mySwiper, slider) {
     let mySwiperInt = mySwiper;
     function mobileSlider () {   
@@ -1105,5 +1041,37 @@ var eclipceVideo = new Swiper('.video_slider', {
     },
   })
 
+
+//   async function loadClients() {
+//     const response = await fetch('https://www.mitsubishi-motors.ru/ajax/service/', {
+//     method: 'GET',
+//     headers: { 'Content-Type': 'aplication/json' },
+//     body: JSON.stringify(client) 
+// })
+// const data = await response.json()
+//     return  {response, data };
+// }
+
+// let autoArray =  loadClients();
+
+
+// const address = fetch("https://www.mitsubishi-motors.ru/ajax/service/")
+//   .then((response) => response.json());
+
+// const printAddress = async () => {
+//   const a = await address;
+//   console.log(a);
+// };
+
+// let arrayCara = printAddress();
+
+
+// function createOption (id) {
+//     let select = document.getElementById(id);
+
+   
+    
+
+// }
 
 
