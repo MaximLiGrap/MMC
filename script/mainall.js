@@ -1042,36 +1042,49 @@ var eclipceVideo = new Swiper('.video_slider', {
   })
 
 
-//   async function loadClients() {
-//     const response = await fetch('https://www.mitsubishi-motors.ru/ajax/service/', {
-//     method: 'GET',
-//     headers: { 'Content-Type': 'aplication/json' },
-//     body: JSON.stringify(client) 
-// })
-// const data = await response.json()
-//     return  {response, data };
-// }
-
-// let autoArray =  loadClients();
 
 
-// const address = fetch("https://www.mitsubishi-motors.ru/ajax/service/")
-//   .then((response) => response.json());
 
-// const printAddress = async () => {
-//   const a = await address;
-//   console.log(a);
-// };
+// Сервис
 
-// let arrayCara = printAddress();
+if(document.querySelector('.flip-mask-wrapper')) {
+    // const maskBlock = document.querySelector('.promo_wrapper');
+    // const maskGood = document.querySelector('.promo_img-back');
+    const maskBad = document.querySelector('.flip-mask-wrapper');
 
 
-// function createOption (id) {
-//     let select = document.getElementById(id);
 
-   
-    
+    document.body.addEventListener('mousemove', function(event){
+        // maskGood.setAttribute('style', `width: ${event.offsetX}px`)
+        maskBad.setAttribute('style', `width: calc(100% - ${event.offsetX}px)`)
+})
+}
 
-// }
+if (document.querySelector('.serv_diller-list')) {
+    const btnServ = document.getElementById('serv_btn');
+    const listServ = document.querySelector('.serv_diller-list');
+
+    let k = 1;
+    btnServ.addEventListener('click', function() {
+        listServ.classList.toggle('open');
+        k++;
+        if(k%2 == 0) {
+            btnServ.textContent = 'Скрыть список дилеров'
+        } else {
+            btnServ.textContent = 'Показать весь список'
+        }
+    })
+}
 
 
+var sliderCorp = new Swiper('.mySwiperCorp', {
+    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper-wrapper',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination-corp',
+      type: 'bullets',
+      clickable: true,
+    },
+  })

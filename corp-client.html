@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(155501, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/155501" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script/jquery.js"></script>
+    <script defer src="script/swiper.js"></script>
+    <script defer src="script/mainall.js"></script>
+    <link rel="stylesheet" href="css/swipercss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="position-relative">
+            <div class="nav_menu-black"></div>
+            <div class="position-fixed head">
+                <div class="nav_menu position-relative px-2 px-sm-4">
+                    <div class="py-lg-3 wraper_logo"><a class="link_logo"
+                        href="index.html"><img class="logo logo-desk" src="img/logo.svg" alt=""><img class="logo logo-mobile" src="img/Asset1@3x.png" alt=""></a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark py-lg-3">
+                        <button id="nav_btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <div class="container-bar">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse px-0" id="navbarTogglerDemo03">
+                            <div class="d-flex border_title pb-2 px-0">
+                                <span class="nav_text">ООО «ММС Рус» — Официальный дистрибьютор Mitsubishi Motors </span>
+                                <ul id="up_nav" class="navbar-nav up_nav">
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Дилерские центры</a></li>
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Спецпредложения</a></li>
+                                    <li class="mx-lg-2 mx-xl-3 mx-md-0 mb-3 mb-lg-0"><a class="up_nav_link" href="">Контакты</a></li>
+                                    <li id="loupe"><button id="search_btn"class="px-0 mb-3 mb-lg-0"><img
+                                                src="img/Loupe.svg" alt=""><span
+                                                class="btn_search">ПОИСК</span></button></li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-2 px-0 w-100">
+                                <ul id="down_nav" class="navbar-nav d-flex justify-content-between">
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_auto"
+                                            class="nav_item-style nav_item-btn px-0">АВТОМОБИЛИ</button>
+                                        <div id="dropdown_aria_auto" class="nav_dropdown ">
+                                            <div id="dropdown_auto" class="dropdown pt-lg-4 pt-2">
+                                                <p class="dropdown_title pt-lg-4 pt-2 col-6">Автомобили</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                                                                        <ul class="pt-lg-5 pt-1 col-lg-6 col-12 dropdown_list drop_auto">
+                                                        <li class="mb-lg-3 mb-1 link_asx"><a class="dropdown_link"
+                                                            href="asx.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/asx.png" alt=""> ASX</a></li>
+                                                    <li class="mb-lg-3 mb-1 "><a class="dropdown_link link_eclipse"
+                                                            href="eclipse.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/EclipsCrossImage.png" alt=""> Eclipse Cross</a></li>
+                                                    <li class="mb-lg-3 mb-1  "><a class="dropdown_link link_out"
+                                                            href="outlander.htm"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/outlander.png" alt=""> Outlander</a></li>
+                                                    <li class="mb-lg-3 mb-1"><a class="dropdown_link link_pjs" href="pjs.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/pajero-sport.png" alt=""> Pajero
+                                                            Sport</a></li>
+                                                    <li class="mb-lg-3 mb-1"><a class="dropdown_link link_out7" href="outlander7.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/outlander21-7seats.png" alt=""> Outlander 7 мест</a></li>
+                                                    <li class="mb-lg-3 mb-1" ><a class="dropdown_link link_l200" href="l200.html"><img class="d-inline d-lg-none mx-2" style="max-width: 10vw;" src="img/main-swiper-car/l200car.png" alt=""> L200</a></li>
+                                                    </ul>
+                                                    <ul class="pt-lg-5 pt-1 col-lg-6 col-12 dropdown_list drop_auto">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="auto-v-nalichi.html">Автомобили в наличии</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Автомобили с пробегом</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href=""><img class="dimon-white"
+                                                                    src="img/image20-b.png" alt=""><img class="dimon-black"
+                                                                    src="img/image20-w.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_auto" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_buyer"
+                                            class="nav_item-style nav_item-btn px-0">ПОКУПАТЕЛЯМ</button>
+                                        <div id="dropdown_aria_buyer" class="nav_dropdown">
+                                            <div id="dropdown_buyer" class="dropdown dropdown_buyer pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">Покупателям</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 up_nav dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="client-remember.html">Памятка покупателя</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Сравнение
+                                                                автомобилей</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Конфигуратор</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Записаться
+                                                                на тест-драйв</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link"
+                                                                href="">Кредитование и страхование</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_buyer" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="nav_item mb-3 mb-lg-0"><button id="btn_servis" class="nav_item-style nav_item-btn px-0">СЕРВИС</button>
+                                        <div id="dropdown_aria_servis" class="nav_dropdown">
+                                            <div id="dropdown_servis" class="dropdown dropdown_servis pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">Сервис</p>
+
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="calc-to.html">Калькулятор ТО</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="zapis-na-to.html">Запись на ТО</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="serv.html">Сервисная программа 3+</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="servis-program.html">Сервисные и отзывные кампании</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="zapasnie.html">Запасные части</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="oil.html">Масло Mitsubishi</a></li>
+
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="catalog-acces.html">Каталог аксессуаров</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="helper.html">Помощь на дорогах</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="map.html">MAP Пролонгация</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="warranty.html">Гарантия на автомобили</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="instruction.html">Инструкции по эксплуатации</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="windshield-replacement.html">Замена стекол</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <button id="btn_close_servis" class="position-absolute btn_close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="mb-lg-0 mb-2"><button id="btn_mmcworld" class="nav_item-style nav_item-btn px-0">МИР MITSUBISHI MOTORS</button>
+                                        <div id="dropdown_aria_mmcworld" class="nav_dropdown">
+                                            <div id="dropdown_mmcworld" class="dropdown dropdown_mmcworld pt-lg-4 pt-1">
+                                                <p class="dropdown_title pt-4">МИР MITSUBISHI MOTORS</p>
+                                                <div class="dropdown_menu col-lg-8 col-12">
+                                                    <ul class="pt-lg-5 pt-1 col-lg-12 col-12 up_nav dropdown_list">
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Новости</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="epts.html">Электронный ПТС</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Технологии Mitsubishi Motors</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Оригинальное масло и жидкости</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="">Как стать дилером</a></li>
+                                                        <li class="mb-lg-3 mb-1"><a class="dropdown_link" href="corp-client.html">Корпоративным клиентам</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button id="btn_close_mmcworld" class="position-absolute btn_close"></button>
+                                        </div>
+
+                                    </li>
+                                    <li id="lkiqon" class="item_lk mb-3 mb-lg-0"><a class="link-lk nav_item-style" href="">ЛИЧНЫЙ
+                                            КАБИНЕТ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section>
+            <div id="search_block" class="search_place position-fixed d-none">
+                <div class="mx-auto d-flex search_place_wraper p-lg-4 p-2 col-md-8 col-12">  
+                        <span class="serch_text">ПОИСК</span>
+                        <form class="mx-auto search_form d-flex" action="">
+                            <input class="mx-auto search_input mx-3" placeholder="Введите поисковый запрос" type="text">
+                            <button><img class="loupe" src="img/Loupe.svg" alt=""></button>
+                        </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="d-flex justify-content-center">
+                <div id="scrolmenu" class="down_menu d-lg-flex col-md-8 col-6 visible container_inner">
+                    <ul id="menu_list" class="d-flex col-md-12 col-10 menu_list px-0">
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">КОНФИГУРАТОР</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10 mb-lg-0 mb-3"><button
+                                class="scrolmenu_btn">КРЕДИТНЫЙ КАЛЬКУЛЯТОР</button></li>
+                        <li class="hero_menu_item col-lg-3 col-10"><button class="scrolmenu_btn">КАЛЬКУЛЯТОР
+                                ОСАГО</button></li>
+                    </ul>
+                </div>
+                <button id="hero_btn" class="down_menu_btn">...</button>
+            </div>
+
+        </section>
+        <section>
+            <div>
+                <div class="hero mb-6 mx-auto">
+                    <div>
+                        <div class="swiper-container mySwiperHero">
+                            <div class="swiper-wrapper swiper-hero">
+                                <div class="swiper-slide">
+                                        <img class="col-12" src="img/outlander/outlander_018_K1.png" alt="">
+                                        <div class="slide_wrap ">
+                                            <div class="text_white">
+                                                <div class="wraper_title mb-4">
+                                                    <p class="hero_title"><img src="img/outlander/out-name.svg" alt=""></p>
+                                                </div>
+                                                <div class="wraper_price d-block d-sm-flex mb-0 mb-sm-5">
+                                                    <div class=" d-inline d-sm-flex align-items-center">
+                                                        <p class="title-small text_price px-0">Корпоративная скидкадо 6% <sup>1</sup></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="eclipse.html" class="btn px-5 btn_all swiper_hero_btn">Подать заявку</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img class="col-12" src="img/L200/hero.png" alt="">
+                                    <div class="slide_wrap ">
+                                        <div class="text_white">
+                                            <div class="wraper_title mb-4">
+                                                <p class="hero_title"><img src="img/L200/l200-name.svg" alt=""></p>
+                                            </div>
+                                            <div class="wraper_price d-block d-sm-flex mb-0 mb-sm-5">
+                                                <div class=" d-inline d-sm-flex align-items-center">
+                                                    <p class="title-small text_price px-0">Корпоративная скидкадо 6% <sup>1</sup></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="eclipse.html" class="btn px-5 btn_all swiper_hero_btn">Подать заявку</a>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next swiper-button-next-hero"></div>
+                            <div class="swiper-button-prev swiper-button-prev-hero"></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner col-12">
+                    <h1 class="title mb-2 mb-sm-4">КОРПОРАТИВНЫЕ ПРОДАЖИ</h1>
+                    <p class="undertitle-text mb-5">ООО «ММС Рус», предлагает юридическим лицам и компаниям партнерам выгодные предложения по ценам и вариантам приобретения автомобилей.</p>
+                </div>
+
+                <div class="col-12 col-lg-8 mx-auto d-flex flex-column flex-sm-row mb-5">
+                    <div class="col-12 col-sm-6">
+                        <div class="col-11 col-sm-10 col-lg-8 mx-auto">
+                            <img class="mb-3" src="img/main-swiper-car/car-iqons/l200car.png" alt="">
+                            <p class="mb-5 text-big text_500">Mitsubishi L200</p>
+                            <a class="bg_red btn_all btn_all-big d-block" href="">Купить L200 от 2&nbsp;349&nbsp;060&nbsp;₽*</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="col-11 col-sm-10 col-lg-8 mx-auto">
+                            <img class="mb-3" src="img/main-swiper-car/car-iqons/outlander.png" alt="">
+                            <p class="mb-5 text-big text_500">Mitsubishi Outlander</p>
+                            <a class="bg_red btn_all btn_all-big d-block" href="">Купить Outlander от 1&nbsp;747&nbsp;460&nbsp;₽*</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text_centre">* Цена указана с максимальным размером скидки на первоначальные комплектации автомобилей</p>
+
+            
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container position-relative mb-7">
+                <div class="container_inner">
+                    <div class="swiper-container mySwiperCorp">
+                        <div class="swiper-wrapper mb-4">
+                            <div class="swiper-slide">
+                                    <a href=""><img class="col-12" src="img/intermark.jpg" alt=""> </a>      
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href=""><img class="col-12" src="img/europlan_lease.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href=""><img class="col-12" src="img/gazpromb-liz.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href=""><img class="col-12" src="img/carcade_lease_2019.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href=""><img class="col-12" src="img/reso_lease_2019.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="swiper-pagination-corp mx-auto text_centre"></div>
+                        <div class="swiper-button-next swiper-button-next-corp text-color-red "></div>
+                        <div class="swiper-button-prev swiper-button-prev-corp text-color-red"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner col-12">
+                    <h1 class="title mb-5">ПРЕИМУЩЕСТВА ДЛЯ КОРПОРАТИВНЫХ КЛИЕНТОВ</h1>
+                    <div class="d-flex flex-column flex-sm-row">
+                        <ul class="col-12 col-sm-6  ul-disck">
+                            <li class="mb-3">Максимальная корпоративная скидка до 10% <sup>1</sup>;</li>
+                            <li class="mb-3"> Корпоративная скидка предоставляется всем корпоративным клиентам, юридическим лицам любой формы собственности, при покупке от 1-го автомобиля;</li>
+                            <li class="mb-3">Обмен корпоративного парка от 1-го автомобиля (Trade-In любой марки автомобиля для юридических лиц, за исключением автомобилей российских марок(ВАЗ, УАЗ,ГАЗ), достигших возраста 10 лет.);</li>
+                        </ul>
+                        <ul class="col-12 col-sm-6  ul-disck">
+                            <li class="mb-3"> Государственные закупки (модель Outlander и Pajero Sport производятся на территории Российской Федерации);</li>
+                            <li class="mb-3">  До 5 лет гарантии (на модель Pajero Sport);</li>
+                            <li class="mb-3"><p>Приобретение в лизинг (операционный и финансовый)</p>
+                                <p>- Минимальное удорожание автомобиля;</p>
+                                <p>- Большой выбор лизинговых компаний партнеров;</p>
+                                <p>- Удобные условия покупки;</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner col-12">
+                    <h1 class="title mb-5">ГДЕ ПРИОБРЕСТИ</h1>
+                    <div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/agat.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/avtomir.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/galant.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/keyauto.jpg" alt=""></a></div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/maximum.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/medved.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/rolf_fleet.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/tts.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner col-12">
+                    <h1 class="title mb-5">ФИНАНСОВЫЙ ЛИЗИНГ</h1>
+                    <div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/alfaleasing.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/BL.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/carcade.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/europlan.jpg" alt=""></a></div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/gazprombank.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/MCIA.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/Mjor.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/reso.jpg" alt=""></a></div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/sber.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/fin/vtb.jpg" alt=""></a></div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-7">
+                <div class="container_inner col-12">
+                    <h1 class="title mb-5">ОПЕРАЦИОННЫЙ ЛИЗИНГ</h1>
+                    <div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/oper/ald.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/oper/arval.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/oper/ial_finance.jpg" alt=""></a></div>
+                            <div class="col-6 col-md-6 col-lg-3 p-3 p-sm-5"><a href=""><img src="img/corp-link/oper/Major_Profi.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">
+                <div class="container_inner">
+                    <div class="corp_form p-5">
+                       
+                        <form class="d-flex flex-column col-12 col-md-6 ml-auto" action="">
+                            <input class="col-12 mb-3 btn_all text-left px-3" type="text" placeholder="Ваш город">
+                            <textarea class="px-3 text-left btn_all mb-3" name="" id="" cols="30" rows="10" placeholder="Текст заявки"></textarea>
+                            <input class="col-12 mb-3 btn_all text-left px-3" type="text" placeholder="Телефон">
+                            <input class="col-12 mb-3 btn_all text-left px-3" type="text" placeholder="Email">
+                            <label class=" mb-3" for="">
+                                <input type="checkbox" name="" id="">
+                                <span class="text-white">Настоящим я выражаю свое безусловное согласие, в соответствии с утвержденной ООО «MMC Рус» формой, расположенной по адресу <a class="link_red" href="https://www.mitsubishi-motors.ru/pdp_main/">https://www.mitsubishi-motors.ru/pdp_main/</a>, на обработку моих персональных данных предоставленных ООО «MMC Рус» (ОГРН 1047715058841, РФ, 117485, Москва, ул. Обручева, дом 30/1, строение 2) любым из способов предусмотренных действующим законодательством РФ, включая, но не ограничиваясь: СМС-информированием, с помощью телефонного звонка, почтового уведомления, телеграммы и иными доступными способами, в целях: предоставления мне информации о товарах/услугах; исследования степени удовлетворенности; использования в маркетинговых исследованиях, проводимых ООО «MMC Рус» и/или его контрагентами в соответствии с Политикой обработки и защиты персональных данных, утвержденной ООО «MMC Рус» и представленной по адресу <a class="link_red" href=" https://www.mitsubishi-motors.ru/pdp_policy/">https://www.mitsubishi-motors.ru/pdp_policy/</a>. 
+                                    Согласие предоставляется на 25 лет. Я уведомлен и согласен с тем, что указанное согласие может быть отозвано путем направления соответствующего письменного уведомления в адрес ООО «MMC Рус». Форма письменного уведомления расположена по адресу: <a class="link_red" href=" https://www.mitsubishi-motors.ru/docs/pdp_recall.doc"></a> https://www.mitsubishi-motors.ru/docs/pdp_recall.doc
+                                </span>
+                            </label>
+                             <button class="btn col-6 bg_red btn_all">Отправить</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">
+                <div class="container_inner">
+                    <p><sub>Реклама. ООО «ММС Рус».</sub></p>
+                    <p><sub>1) Максимально возможная скидка при покупке юридическим лицом более 31 а/м в течение 12 месяцев.</sub></p>
+                    <p><sub>Подробности у официальных дилеров.</sub></p>
+                    <p><sub>Предложение действует с 01.09.2021г. по 30.09.2021г. Предложение ограничено, не является публичной офертой.</sub></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="brand_container">
+            <div class="container py-5 footer">
+                <div class=" mx-auto container_inner px-0 d-flex pb-2 mb-3">
+                    <img class=" mx-md-0 mx-auto" src="img/logo.svg" alt="">
+                    <ul class="footer_upmenu pt-5 px-0">
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Спецпредложения</a></li>
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Поиск дилера</a></li>
+                        <li class="footer_upmenu-item"><a class="footer_topmenu-item" href="">Контакты</a></li>
+                        <li><a class="footer_topmenu-item" href="">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="container container_inner px-0 py-3 mx-auto footer_downmenu">
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">АВТОМОБИЛИ</a></li>
+                        <li><a class="footer_menu-item" href="asx.html">ASX</a></li>
+                        <li><a class="footer_menu-item" href="eclipse.html">Eclipse Cross</a></li>
+                        <li><a class="footer_menu-item" href="outlander.html">Outlander</a></li><li><a class="footer_menu-item" href="outlander7.html">Outlander 7-мест</a></li>
+                        <li><a class="footer_menu-item" href="pjs.html">Pajero Sport</a></li>
+                        
+                        <li><a class="footer_menu-item" href="l200.html">L200</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">ПОКУПАТЕЛЯМ</a></li>
+                        <li><a class="footer_menu-item" href="">Серые дилеры</a></li>
+                        <li><a class="footer_menu-item" href="">Сравнение автомобилей</a></li>
+                        <li><a class="footer_menu-item" href="">Конфигуратор</a></li>
+                        <li><a class="footer_menu-item" href="">Записаться на тест-драйв</a></li>
+                        <li><a class="footer_menu-item" href="">Кредитование и страхование</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">СЕРВИС</a></li>
+                        <li><a class="footer_menu-item" href="calc-to.html">Калькулятор ТО</a></li>
+                        <li><a class="footer_menu-item" href="calc-to.html">Запись на ТО</a></li>
+                        <li><a class="footer_menu-item" href="serv.html">Сервисная программа 3+</a></li>
+                        <li><a class="footer_menu-item" href="servis-program.html">Сервисные и отзывные кампании</a></li>
+                        <li><a class="footer_menu-item" href="zapasnie.html">Запасные части</a></li>
+                        <li><a class="footer_menu-item" href="catalog-acces.html">Каталог аксессуаров</a></li>
+                        <li><a class="footer_menu-item" href="helper.html">Помощь на дорогах</a></li>
+                        <li><a class="footer_menu-item" href="warranty.html">Гарантия на автомобили</a></li>
+                        <li><a class="footer_menu-item" href="instruction.html">Инструкции по эксплуатации</a></li>
+                        <li><a class="footer_menu-item" href="windshield-replacement.html">Замена стекол</a></li>
+                    </ul>
+                    <ul class="px-0 col-3">
+                        <li><a class="footer_menu-itemtop" href="">МИР MITSUBISHI MOTORS</a></li>
+                        <li><a class="footer_menu-item" href="">Новости</a></li>
+                        <li><a class="footer_menu-item" href="">Электронный ПТС</a></li>
+                        <li><a class="footer_menu-item" href="">Технологии Mitsubishi Motors</a></li>
+                        <li><a class="footer_menu-item" href="">Оригинальное масло и жидкости</a></li>
+                        <li><a class="footer_menu-item" href="">Как стать дилером</a></li>
+                        <li><a class="footer_menu-item" href="">Корпоративным клиентам</a></li>
+                    </ul>
+                </div>
+
+                <div class="container container_inner px-0 py-3 mx-auto d-flex footer_contact">
+                    <p class="col-md-5 footer_text">Drive Your Ambition&nbsp;&mdash; Воплощение твоих амбиций. Данный интернет-сайт носит информационный характер и&nbsp;не&nbsp;является публичной офертой, определяемой положениями Статьи 437&nbsp;ГК РФ. Для получения подробной информации обращайтесь в&nbsp;официальные дилерские центры автомобилей MITSUBISHI или по&nbsp;телефону 8-800-200-05-25. &copy;&nbsp;ООО &laquo;ММС Рус&raquo;. 2019. Юридическая информация.</p>
+                    <div class="mx-md-3 mb-3 mx-lg-auto mx-auto">
+                        <h3 class="footer_title">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h3>
+                        <a class="mb-3 d-inline-block" href=""><img src="img/AppStore.png" alt=""></a>
+                        <a class="mb-3 d-inline-block" href=""><img src="img/GooglePlay.png" alt=""></a>
+                    </div>
+                    <div class="mb-3 mx-auto mx-md-0">
+                        <h3 class="footer_title">MITSUBISHI MOTORS В&nbsp;СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <div class="d-flex justify-content-between mx-auto">
+                            <a  href=""><img src="img/YouTube.svg" alt=""></a>
+                            <a  href=""><img src="img/Instagram.svg" alt=""></a>
+                            <a  href=""><img src="img/Facebook.svg" alt=""></a>
+                            <a  href=""><img src="img/Twitter.svg" alt=""></a>
+                            <a  href=""><img src="img/Vkontakte.svg" alt=""></a>
+                            <a  href=""><img src="img/Odnoklassniki.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
