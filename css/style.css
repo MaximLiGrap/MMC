@@ -110,6 +110,10 @@ p {
     margin: unset;
 }
 
+.td-vertical-align {
+    vertical-align: middle;
+}
+
 
 .text-upper {
     text-transform: uppercase;
@@ -309,6 +313,10 @@ p {
     line-height: 1.4;
 }
 
+.text_400 {
+    font-weight: 400;
+}
+
 .text_500 {
     font-weight: 500;
 }
@@ -347,6 +355,10 @@ p {
 .border-white {
     border: 15px solid #FFFFFF;
 }
+
+
+
+
 
 
 
@@ -529,6 +541,14 @@ p {
     background-repeat: no-repeat;
     padding-left: 14px;
     color: #E3E5E6;
+}
+
+.compare-head {
+    background: #F5F5F5;
+}
+
+.compare-table>thead>tr>th {
+    border: unset;
 }
 
 /* Выпадашки */
@@ -1483,7 +1503,7 @@ cursor: pointer;
     margin-right: 10px;
 }
 
-.checkbox_label {
+.checkbox__label {
     width:calc( ( 100% - 40px ) / 3 );
 }
 
@@ -2516,6 +2536,11 @@ thead {
 .swiper-old-auto-button-next::after, .swiper-old-auto-button-prev::after {
     font-size: 1vw;
 }
+
+.big__check {
+    width: 26px;
+    height: 26px;
+}
     
 @media (max-width: 1600px) {
     .dropdown_buyer {
@@ -2570,7 +2595,7 @@ thead {
 
 @media (max-width: 1200px) {
 
-    .checkbox_label {
+    .checkbox__label {
         width:calc( ( 100% - 20px ) / 2 );
     }
 
@@ -3450,7 +3475,7 @@ thead {
         height: 300px;
     }
 
-    .checkbox_label {
+    .checkbox__label {
         width:100%;
     }
 
@@ -3974,6 +3999,10 @@ thead {
 }
 
 @media (max-width: 540px) {
+
+    .text-small {
+        font-size: 10px;
+    }
 
     .mb-8 {
         margin-bottom: 20px;
