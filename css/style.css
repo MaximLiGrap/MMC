@@ -357,6 +357,26 @@ p {
     border: 15px solid #FFFFFF;
 }
 
+.has-error {
+    border:1px solid red;
+}
+
+.check:disabled{
+    background-color:gray;
+}
+
+.check:disabled ~ .checkbox__name {
+    color:gray;
+}
+
+.form-legal [data-toggle=collapse] .more, .form-legal [data-toggle=collapse].collapsed .less {
+    display: none;
+}
+
+.form-legal [data-toggle=collapse] .less, .form-legal [data-toggle=collapse].collapsed .more {
+    display: unset;
+}
+
 
 
 .text_white {
