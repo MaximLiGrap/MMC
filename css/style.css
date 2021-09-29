@@ -233,9 +233,6 @@ p {
 }
 
 
-.text-right {
-    text-align: right;
-}
 
 .title-small {
     font-size: 24px;
@@ -296,9 +293,8 @@ p {
     padding-left: unset;
 }
 
-.text_white {
-    color: #FFFFFF;
-}
+
+
 
 .swiper-pagination-corp > .swiper-pagination-bullet {
     margin: 0 5px;
@@ -338,10 +334,15 @@ p {
 
 .bg_anthracite {
     background-color: #686D71;
+    color: white;
 }
 
 .bg_cold-gray {
     background-color: #BFC2C4;
+}
+
+.borger_cold-gray {
+    border: 1px solid #BFC2C4;
 }
 
 .bg_concrete-gray {
@@ -358,8 +359,15 @@ p {
 
 
 
+.text_white {
+    color: #FFFFFF;
+}
 
 
+
+.text-right {
+    text-align: right;
+}
 
 
 .container {
@@ -411,6 +419,26 @@ p {
     right: 0;
     max-width: 40%;
 }
+
+.border-bottom_cold-gray {
+    border-bottom: 1px solid #BFC2C4;
+}
+
+.mmc-bank__btn.active {
+    font-weight: 500;
+    background-color: #E3E5E6;
+}
+
+.mmc-bank__content {
+    height: 0;
+}
+
+.mmc-bank__content.active {
+    height: auto;
+}
+
+
+
 
 
 
@@ -551,6 +579,35 @@ p {
     border: unset;
 }
 
+.compare-table.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #BFC2C4;
+}
+
+.compare-table.table {
+    border-color: #BFC2C4;
+}
+
+.config__pointer {
+    width: max-content;
+    margin-left: -8px;
+}
+
+.config__pointer-text {
+    color: #BFC2C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.config__pointer-svg {
+    max-width: 100%;
+}
 /* Выпадашки */
 
 .dropdown_btn {
@@ -2541,6 +2598,13 @@ thead {
     width: 26px;
     height: 26px;
 }
+
+.multiselect__content-wrapper {
+    max-height: 300px;
+    overflow: auto !important;
+}
+
+
     
 @media (max-width: 1600px) {
     .dropdown_buyer {
