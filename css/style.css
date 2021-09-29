@@ -1754,7 +1754,6 @@ thead {
   
   
     .checkbox__label {
-      width: max-content;
       display: flex;
       align-items: center;
     }
