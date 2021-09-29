@@ -607,12 +607,19 @@ p {
     border-color: #BFC2C4;
 }
 
-.config__pointer {
+.configurator__container {
+    display: none;
+}
+
+.configurator__container.active {
+    display: block;
+}
+.configutator-menu__item {
     width: max-content;
     margin-left: -8px;
 }
 
-.config__pointer-text {
+.configutator-menu__item-text {
     color: #BFC2C4;
     display: flex;
     justify-content: center;
@@ -625,8 +632,31 @@ p {
 }
 
 
-.config__pointer-svg {
+.configutator-menu__item-svg {
     max-width: 100%;
+}
+
+.configutator-menu__item.active>.configutator-menu__item-text {
+    color: #FFFFFF;
+}
+
+.configutator-menu__item.active>.configutator-menu__item-svg>path {
+    fill: #E30000;
+}
+
+.configutator-menu__item.pre-active>.configutator-menu__item-svg>path {
+    fill: #BFC2C4;
+}
+.configutator-menu__item.pre-active>.configutator-menu__item-text {
+    color: #FFFFFF;
+}
+
+.configurator__btn-param {
+    cursor: pointer;
+}
+
+.configurator__btn-param.active {
+    background-color: #E3E5E6;
 }
 /* Выпадашки */
 
@@ -1607,6 +1637,11 @@ cursor: pointer;
 .diler {
     border-bottom: 1px solid #BFC2C4;
     padding: 15px 7px;
+    cursor: pointer;
+}
+
+.diler:hover {
+    background-color: #f5f5f5;
 }
 
 

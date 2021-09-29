@@ -1088,3 +1088,171 @@ var sliderCorp = new Swiper('.mySwiperCorp', {
       clickable: true,
     },
   })
+
+
+if (document.querySelector('.container_diler')) {
+    document.querySelector('.container_diler').addEventListener('click', function (event) {
+        console.log(event.target)
+        if(event.target.closest('.diler')) {
+            for (let diler of document.querySelectorAll('.diler')) {
+                diler.classList.remove('bg_light-gray')
+            }
+            event.target.closest('.diler').classList.add('bg_light-gray')
+        }
+        
+    })
+}
+
+// Конфигуратор
+// Меню
+if (document.querySelector('.configutator-menu')){
+    document.querySelector('.configutator-menu').addEventListener('click', function(event) {
+        if(event.target.closest('.configutator-menu__item') && event.target.closest('.configutator-menu__item').classList.contains('pre-active')) {
+            // for (let item of document.querySelectorAll('.configutator-menu__item')) {
+            //     item.classList.remove('active')
+            // }
+            // event.target.closest('.configutator-menu__item').classList.remove('pre-active')
+            // event.target.closest('.configutator-menu__item').classList.add('active')
+            let pages = document.querySelectorAll('.configurator__container');
+            console.log(pages)
+            let index = [...document.querySelectorAll('.configutator-menu__item')].indexOf(event.target.closest('.configutator-menu__item'));
+            console.log(index)
+
+            let menuItem = document.querySelectorAll('.configutator-menu__item');
+            for (let item of document.querySelectorAll('.configutator-menu__item')) {
+                item.classList.remove('active')
+            }
+            for (let page of pages) {
+                page.classList.remove('active')
+            }
+            for(let i = 1; i < (menuItem.length - index); i++) {
+                console.log(menuItem[index+i])
+                menuItem[index+i].classList.remove('pre-active')
+            }
+
+            pages[index].classList.add('active')
+            event.target.closest('.configutator-menu__item').classList.remove('pre-active')
+            event.target.closest('.configutator-menu__item').classList.add('active')
+        }
+    })
+}
+
+// Первый шаг
+if (document.querySelector('.config_car_list')){
+    document.querySelector('.config_car_list').addEventListener('click', function(event) {
+        if(event.target.closest('.config_car_item')) {
+            for (let step of document.querySelectorAll('.configurator__container')) {
+                step.classList.remove('active')
+            }
+            for (let step of document.querySelectorAll('.configutator-menu__item')) {
+                step.classList.remove('active')
+            }
+            document.getElementById('btn-step1').classList.add('pre-active')
+            document.getElementById('step2').classList.add('active')
+            document.getElementById('btn-step2').classList.add('active')
+
+            let configImg = document.querySelectorAll('.configurator__container-img')
+            let configImgName = document.querySelectorAll('.configurator__container-img-name')
+            for (let img of configImg) {
+                img.setAttribute('src', event.target.closest('.config_car_item').lastElementChild.src)
+            }
+            for (let name of configImgName) {
+                name.textContent = event.target.closest('.config_car_item').firstElementChild.textContent
+            } 
+        }
+    })
+}
+// выбор двигателя
+if(document.querySelector('.configurator__btn-container1')) {
+    document.querySelector('.configurator__btn-container1').addEventListener('click', function(event){
+        if(event.target.closest('.configurator__btn-param')) {
+            for (let item of document.querySelector('.configurator__btn-container1').children) {
+                item.classList.remove('active')
+            }
+            event.target.closest('.configurator__btn-param').classList.add('active')
+            for (let item of document.querySelectorAll('.configurator__param1')) {
+                item.textContent = event.target.closest('.configurator__btn-param').textContent
+            }
+            
+        }
+    })
+}
+// выбор КПП
+if(document.querySelector('.configurator__btn-container2')) {
+    document.querySelector('.configurator__btn-container2').addEventListener('click', function(event){
+        if(event.target.closest('.configurator__btn-param')) {
+            for (let item of document.querySelector('.configurator__btn-container2').children) {
+                item.classList.remove('active')
+            }
+            event.target.closest('.configurator__btn-param').classList.add('active')
+            for (let item of document.querySelectorAll('.configurator__param2')) {
+                item.textContent = event.target.closest('.configurator__btn-param').textContent
+            }
+        }
+    })
+}
+// выбор привода
+if(document.querySelector('.configurator__btn-container3')) {
+    document.querySelector('.configurator__btn-container3').addEventListener('click', function(event){
+        if(event.target.closest('.configurator__btn-param')) {
+            for (let item of document.querySelector('.configurator__btn-container3').children) {
+                item.classList.remove('active')
+            }
+            event.target.closest('.configurator__btn-param').classList.add('active')
+            for (let item of document.querySelectorAll('.configurator__param3')) {
+                item.textContent = event.target.closest('.configurator__btn-param').textContent
+            }
+        }
+    })
+}
+// выбор комплектации
+if(document.querySelector('.configurator__btn-container5')) {
+    document.querySelector('.configurator__btn-container5').addEventListener('click', function(event){
+        if(event.target.closest('.configurator__btn-param')) {
+            for (let item of document.querySelector('.configurator__btn-container5').children) {
+                item.classList.remove('active')
+            }
+            event.target.closest('.configurator__btn-param').classList.add('active')
+            for (let item of document.querySelectorAll('.configurator__param5')) {
+                item.textContent = event.target.closest('.configurator__btn-param').textContent
+            }
+        }
+    })
+}
+
+// Клик по первой кнопке ДАЛЕЕ
+if (document.querySelector('.configuration_btn-next1')) {
+    document.querySelector('.configuration_btn-next1').addEventListener('click', function(event) {
+        document.getElementById('btn-step2').classList.remove('active')
+        document.getElementById('btn-step2').classList.add('pre-active')
+        document.getElementById('btn-step3').classList.add('active')
+        document.getElementById('step2').classList.remove('active')
+        document.getElementById('step3').classList.add('active')
+    })
+
+}
+
+// Клик по второй кнопке ДАЛЕЕ
+if (document.querySelector('.configuration_btn-next2')) {
+    document.querySelector('.configuration_btn-next2').addEventListener('click', function(event) {
+        document.getElementById('btn-step3').classList.remove('active')
+        document.getElementById('btn-step3').classList.add('pre-active')
+        document.getElementById('btn-step4').classList.add('active')
+        document.getElementById('step3').classList.remove('active')
+        document.getElementById('step4').classList.add('active')
+    })
+
+}
+
+// Клик по третей кнопке ДАЛЕЕ
+if (document.querySelector('.configuration_btn-next3')) {
+    document.querySelector('.configuration_btn-next3').addEventListener('click', function(event) {
+        document.getElementById('btn-step4').classList.remove('active')
+        document.getElementById('btn-step4').classList.add('pre-active')
+        document.getElementById('btn-step5').classList.add('active')
+        document.getElementById('step4').classList.remove('active')
+        document.getElementById('step5').classList.add('active')
+    })
+
+}
+

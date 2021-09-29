@@ -223,115 +223,76 @@
             <div>
                 <div class="container mb-5">
                     <div class="container_inner">
-                        <div class="d-flex align-items-center flex-wrap">
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg"  height="35" viewBox="0 0 190 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0H177.979L189.243 17.5L177.979 35H0V0Z" fill="#ED0000"/>
+                        <div class="d-flex align-items-center flex-wrap configutator-menu">
+                            <button id="btn-step1" class="position-relative mb-3 configutator-menu__item px-0 active">
+                                <svg class="configutator-menu__item-svg"  height="35" viewBox="0 0 190 35" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0H177.979L189.243 17.5L177.979 35H0V0Z" stroke="#BFC2C4"/>
                                 </svg>
-                                <span class="position-absolute config__pointer-text text-white">Автомобиль</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="352" height="35" viewBox="0 0 352 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span class="position-absolute configutator-menu__item-text">Автомобиль</span>
+                            </button>
+                            <button id="btn-step2" class="position-relative mb-3 configutator-menu__item px-0">
+                                <svg class="configutator-menu__item-svg" width="352" height="35" viewBox="0 0 352 35" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M340.147 34.5H1.14889L11.9173 17.7706L12.0915 17.5L11.9173 17.2294L1.14889 0.5H340.147L351.09 17.5L340.147 34.5Z" stroke="#BFC2C4"/>
                                 </svg>
-                                <span class="position-absolute config__pointer-text">Двигатель, КПП, трансмиссия</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="274" height="35" viewBox="0 0 274 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span class="position-absolute configutator-menu__item-text">Двигатель, КПП, трансмиссия</span>
+                            </button>
+                            <button id="btn-step3" class="position-relative mb-3 configutator-menu__item px-0">
+                                <svg class="configutator-menu__item-svg" width="274" height="35" viewBox="0 0 274 35" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M261.735 34.5H1.58835L12.3568 17.7706L12.531 17.5L12.3568 17.2294L1.58835 0.5H261.735L272.678 17.5L261.735 34.5Z" stroke="#BFC2C4"/>
                                 </svg>           
-                                <span class="position-absolute config__pointer-text">Комплектация и цвет</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="264" height="35" viewBox="0 0 264 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span class="position-absolute configutator-menu__item-text">Комплектация и цвет</span>
+                            </button>
+                            <button id="btn-step4" class="position-relative mb-3 configutator-menu__item px-0">
+                                <svg class="configutator-menu__item-svg" width="264" height="35" viewBox="0 0 264 35" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M252.311 34.5H1.17624L11.9447 17.7706L12.1189 17.5L11.9447 17.2294L1.17624 0.5H252.311L263.254 17.5L252.311 34.5Z" stroke="#BFC2C4"/>
                                     </svg>                
-                                <span class="position-absolute config__pointer-text">Опции и аксессуары</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="127" height="35" viewBox="0 0 127 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span class="position-absolute configutator-menu__item-text">Опции и аксессуары</span>
+                            </button>
+                            <button id="btn-step5" class="position-relative mb-3 configutator-menu__item px-0">
+                                <svg class="configutator-menu__item-svg" width="127" height="35" viewBox="0 0 127 35" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.75436 0.5H126.5V34.5H1.75436L12.5228 17.7706L12.697 17.5L12.5228 17.2294L1.75436 0.5Z" stroke="#BFC2C4"/>
                                 </svg>    
-                                <span class="position-absolute config__pointer-text">Готово</span>
-                            </a>
+                                <span class="position-absolute configutator-menu__item-text">Готово</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="container mb-7">
+                <div id="step1" class="container mb-7 configurator__container active">
                     <div class="container_inner">
-                        <div class="d-flex flex-wrap">
-                            <div class="col-12 col-md-6 col-lg-4 p-4">
+                        <div class="d-flex flex-wrap config_car_list">
+                            <div class="col-12 col-md-6 col-lg-4 p-4 config_car_item">
                                 <p class="mb-3 text-big text_500">Новый PAJERO SPORT</p>
                                 <img src="img/pjs/pjs-color/image72.png" alt="">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 p-4">
+                            <div class="col-12 col-md-6 col-lg-4 p-4 config_car_item">
                                 <p class="mb-3 text-big text_500">Обновленный OUTLANDER</p>
                                 <img src="img/outlander/color-out/outlander_C10.jpg" alt="">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 p-4">
+                            <div class="col-12 col-md-6 col-lg-4 p-4 config_car_item">
                                 <p class="mb-3 text-big text_500">Новый Eclipse Cross</p>
                                 <img src="img/EclipseCross/color/eclipse-cross_C21.jpg" alt="">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 p-4">
+                            <div class="col-12 col-md-6 col-lg-4 p-4 config_car_item">
                                 <p class="mb-3 text-big text_500">ASX</p>
                                 <img src="img/asx/color/asx_C22.jpg" alt="">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 p-4">
+                            <div class="col-12 col-md-6 col-lg-4 p-4 config_car_item">
                                 <p class="mb-3 text-big text_500">OUTLANDER - 7 мест</p>
                                 <img src="img/Outlander7/color-out/out-7seats_D25.jpg" alt="">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 p-4">
+                            <div class="col-12 col-md-6 col-lg-4 p-4 config_car_item">
                                 <p class="mb-3 text-big text_500">L200</p>
                                 <img src="img/L200/color/l200_M08.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <div class="container mb-5">
-                    <div class="container_inner">
-                        <div class="d-flex align-items-center flex-wrap">
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg"  height="35" viewBox="0 0 190 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0H177.979L189.243 17.5L177.979 35H0V0Z" fill="#BFC2C4" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Автомобиль</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="352" height="35" viewBox="0 0 352 35" fill="#ED0000" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M340.147 34.5H1.14889L11.9173 17.7706L12.0915 17.5L11.9173 17.2294L1.14889 0.5H340.147L351.09 17.5L340.147 34.5Z" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Двигатель, КПП, трансмиссия</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="274" height="35" viewBox="0 0 274 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M261.735 34.5H1.58835L12.3568 17.7706L12.531 17.5L12.3568 17.2294L1.58835 0.5H261.735L272.678 17.5L261.735 34.5Z" stroke="#BFC2C4"/>
-                                </svg>           
-                                <span class="position-absolute config__pointer-text">Комплектация и цвет</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="264" height="35" viewBox="0 0 264 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M252.311 34.5H1.17624L11.9447 17.7706L12.1189 17.5L11.9447 17.2294L1.17624 0.5H252.311L263.254 17.5L252.311 34.5Z" stroke="#BFC2C4"/>
-                                    </svg>                
-                                <span class="position-absolute config__pointer-text">Опции и аксессуары</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="127" height="35" viewBox="0 0 127 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75436 0.5H126.5V34.5H1.75436L12.5228 17.7706L12.697 17.5L12.5228 17.2294L1.75436 0.5Z" stroke="#BFC2C4"/>
-                                </svg>    
-                                <span class="position-absolute config__pointer-text">Готово</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mb-7">
+
+                <div id="step2" class="container mb-7 configurator__container">
                     <div class="container_inner">
                         <div class=" col-xxl-12 col-xl-7 col-lg-9 col-md-12 col-12 mb-4 mx-auto">
-                            <div class="w-100"><img src="img/main-swiper-car/out-name.png" alt=""></div>
-                            <img class="d-block mx-auto" src="img/main-swiper-car/outlander.png" alt="">
+                            <div class="configurator__container-img-name text-big text_500"></div>
+                            <img class="d-block mx-auto configurator__container-img col-10 mx-auto" src="img/main-swiper-car/outlander.png" alt="">
                         </div>
                         <div class="d-flex flex-wrap">
                             <div class="col-12 col-md-7">
@@ -340,16 +301,14 @@
                                         <p class="title-36 text_500 mb-4">Выберите двигатель</p>
                                     </div>
             
-                                    <div class="d-flex  flex-wrap">
-                                            <div class="borger_cold-gray p-3 mx-2 mb-3">
-                                                2.0 L DOHC MIVEC
-                                                <p>146 л. с. (106 кВт)</p>
-                                                <p>196 Нм (4200 об/мин)</p>
+                                    <div class="d-flex  flex-wrap configurator__btn-container1">
+                                            <div class="borger_cold-gray configurator__btn-param active p-3 mx-2 mb-3">
+                                                <p>2.0 L DOHC MIVEC</p>
+                                                
                                             </div>                           
-                                            <div class="borger_cold-gray p-3 mx-2 mb-3">
-                                                2.0 L DOHC MIVEC
-                                                <p>146 л. с. (106 кВт)</p>
-                                                <p>196 Нм (4200 об/мин)</p>
+                                            <div class="borger_cold-gray configurator__btn-param p-3 mx-2 mb-3">
+                                                <p>2.0 L DOHC MIVEC</p>
+                                                
                                             </div>  
                                     </div>
                                 </div>
@@ -359,11 +318,11 @@
                                         <p class="title-36 text_500 mb-4">Выберите КПП</p>
                                     </div>
         
-                                    <div class="d-flex">
-                                        <div class="borger_cold-gray p-3 mx-2">
+                                    <div class="d-flex configurator__btn-container2">
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2">
                                             Вариатор (CVT) Jatco
                                         </div>                           
-                                        <div class="borger_cold-gray p-3 mx-2">
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2">
                                             Автоматическая (CVT)
                                         </div>  
                                     </div>
@@ -374,34 +333,34 @@
                                         <p class="title-36 text_500 mb-4">Выберите трансмиссию</p>
                                     </div>
         
-                                    <div class="d-flex flex-wrap">
-                                        <div class="borger_cold-gray p-3 mx-2 mb-3">
-                                            2WD
-                                            <p>Передний привод</p>
+                                    <div class="d-flex flex-wrap configurator__btn-container3">
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2 mb-3">
+                                            <p>2WD</p>
+                                            
                                         </div>                           
-                                        <div class="borger_cold-gray p-3 mx-2 mb-3">
-                                            4WD S-AWC
-                                            <p>Полный привод</p>
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2 mb-3">
+                                            <p>4WD S-AWC</p>
+                                            
                                         </div>  
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-5">
                                 <div class="col-12 col-lg-10">
-                                    <button class="bg_red col-12 btn_all">ДАЛЕЕ</button>
+                                    <button class="bg_red col-12 btn_all configuration_btn-next1">ДАЛЕЕ</button>
                                     <div class="p-4 bg_light-gray">
-                                        <p class="title-36 text-upper text_500 mb-2">Outlander</p>
+                                        <p class="title-36 text-upper text_500 mb-2 configurator__container-img-name">Outlander</p>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Двигатель</p>
-                                            <p class="text-big text_500">2.4 L MIVEC</p>
+                                            <p class="text-big text_500 configurator__param1">2.4 L MIVEC</p>
                                         </div>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Коробка передач</p>
-                                            <p class="text-big text_500">CVT</p>
+                                            <p class="text-big text_500 configurator__param2 ">CVT</p>
                                         </div>
                                         <div class="d-flex justify-content-between mb-5">
                                             <p>Привод</p>
-                                            <p class="text-big text_500">4WD S-AWC</p>
+                                            <p class="text-big text_500 configurator__param3">4WD S-AWC</p>
                                         </div>
                                         <p class="title-36 text_500 text-right">От42 196 000 ₽</p>
                                     </div>
@@ -410,51 +369,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <div class="container mb-5">
-                    <div class="container_inner">
-                        <div class="d-flex align-items-center flex-wrap">
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg"  height="35" viewBox="0 0 190 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0H177.979L189.243 17.5L177.979 35H0V0Z" fill="#BFC2C4" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Автомобиль</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="352" height="35" viewBox="0 0 352 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M340.147 34.5H1.14889L11.9173 17.7706L12.0915 17.5L11.9173 17.2294L1.14889 0.5H340.147L351.09 17.5L340.147 34.5Z" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Двигатель, КПП, трансмиссия</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="274" height="35" viewBox="0 0 274 35" fill="#ED0000" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M261.735 34.5H1.58835L12.3568 17.7706L12.531 17.5L12.3568 17.2294L1.58835 0.5H261.735L272.678 17.5L261.735 34.5Z" stroke="#BFC2C4"/>
-                                </svg>           
-                                <span class="position-absolute config__pointer-text text-white">Комплектация и цвет</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="264" height="35" viewBox="0 0 264 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M252.311 34.5H1.17624L11.9447 17.7706L12.1189 17.5L11.9447 17.2294L1.17624 0.5H252.311L263.254 17.5L252.311 34.5Z" stroke="#BFC2C4"/>
-                                    </svg>                
-                                <span class="position-absolute config__pointer-text">Опции и аксессуары</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="127" height="35" viewBox="0 0 127 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75436 0.5H126.5V34.5H1.75436L12.5228 17.7706L12.697 17.5L12.5228 17.2294L1.75436 0.5Z" stroke="#BFC2C4"/>
-                                </svg>    
-                                <span class="position-absolute config__pointer-text">Готово</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mb-7">
+
+                <div id="step3" class="container mb-7 configurator__container">
                     <div class="container_inner">
                         <div class=" col-xxl-12 col-xl-7 col-lg-9 col-md-12 col-12 mb-4 mx-auto">
-                            <div class="w-100"><img src="img/main-swiper-car/out-name.png" alt=""></div>
-                            <img class="d-block mx-auto" src="img/main-swiper-car/outlander.png" alt="">
+                            <div class="configurator__container-img-name text-big text_500"></div>
+                            <img class="d-block mx-auto configurator__container-img col-10 mx-auto" src="img/main-swiper-car/outlander.png" alt="">
                         </div>
                         <div class="d-flex flex-wrap">
                             <div class="col-12 col-md-7 mb-5 mb-md-0">
@@ -478,14 +398,14 @@
                                         <p class="title-36 text_500 mb-4">Выберите комплектацию</p>
                                     </div>
         
-                                    <div class="d-flex flex-wrap">
-                                        <div class="borger_cold-gray p-3 mx-2 mb-3">
+                                    <div class="d-flex flex-wrap configurator__btn-container5">
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2 mb-3">
                                             Invite 4WD
                                         </div>                           
-                                        <div class="borger_cold-gray p-3 mx-2 mb-3">
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2 mb-3">
                                             Intence+ 4WD
                                         </div>  
-                                        <div class="borger_cold-gray p-3 mx-2 mb-3">
+                                        <div class="borger_cold-gray configurator__btn-param p-3 mx-2 mb-3">
                                             Instyle 4WD
                                         </div>
                                     </div>
@@ -493,20 +413,20 @@
                             </div>
                             <div class="col-12 col-md-5">
                                 <div class="col-12 col-lg-10">
-                                    <button class="bg_red col-12 btn_all">ДАЛЕЕ</button>
+                                    <button class="bg_red col-12 btn_all configuration_btn-next2">ДАЛЕЕ</button>
                                     <div class="p-4 bg_light-gray">
-                                        <p class="title-36 text-upper text_500 mb-2">Outlander</p>
+                                        <p class="title-36 text-upper text_500 mb-2 configurator__container-img-name">Outlander</p>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Двигатель</p>
-                                            <p class="text-big text_500">2.4 L MIVEC</p>
+                                            <p class="text-big text_500 configurator__param1">2.4 L MIVEC</p>
                                         </div>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Коробка передач</p>
-                                            <p class="text-big text_500">CVT</p>
+                                            <p class="text-big text_500 configurator__param2">CVT</p>
                                         </div>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Привод</p>
-                                            <p class="text-big text_500">4WD S-AWC</p>
+                                            <p class="text-big text_500 configurator__param3">4WD S-AWC</p>
                                         </div>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Цвет</p>
@@ -514,17 +434,13 @@
                                         </div>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Комплектация</p>
-                                            <p class="text-big text_500">Intence+ 4WD</p>
+                                            <p class="text-big text_500 configurator__param5">Intence+ 4WD</p>
                                         </div>
                                         <p class="title-36 text_500 text-right">От42 196 000 ₽</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container mb-7">
-                    <div class="container_inner">
                         <div class="d-flex flex-wrap">
                             <div class="col-8 col-md-4 mb-5 mb-md-0">
                                 <div class="col-10">
@@ -632,52 +548,12 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <div class="container mb-5">
-                    <div class="container_inner">
-                        <div class="d-flex align-items-center flex-wrap">
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg"  height="35" viewBox="0 0 190 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0H177.979L189.243 17.5L177.979 35H0V0Z" fill="#BFC2C4" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Автомобиль</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="352" height="35" viewBox="0 0 352 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M340.147 34.5H1.14889L11.9173 17.7706L12.0915 17.5L11.9173 17.2294L1.14889 0.5H340.147L351.09 17.5L340.147 34.5Z" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Двигатель, КПП, трансмиссия</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="274" height="35" viewBox="0 0 274 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M261.735 34.5H1.58835L12.3568 17.7706L12.531 17.5L12.3568 17.2294L1.58835 0.5H261.735L272.678 17.5L261.735 34.5Z" stroke="#BFC2C4"/>
-                                </svg>           
-                                <span class="position-absolute config__pointer-text text-white">Комплектация и цвет</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="264" height="35" viewBox="0 0 264 35" fill="#ED0000" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M252.311 34.5H1.17624L11.9447 17.7706L12.1189 17.5L11.9447 17.2294L1.17624 0.5H252.311L263.254 17.5L252.311 34.5Z" stroke="#BFC2C4"/>
-                                    </svg>                
-                                <span class="position-absolute config__pointer-text text-white">Опции и аксессуары</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="127" height="35" viewBox="0 0 127 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75436 0.5H126.5V34.5H1.75436L12.5228 17.7706L12.697 17.5L12.5228 17.2294L1.75436 0.5Z" stroke="#BFC2C4"/>
-                                </svg>    
-                                <span class="position-absolute config__pointer-text">Готово</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mb-7">
+
+                <div id="step4" class="container mb-7 configurator__container">
                     <div class="container_inner">
                         <div class=" col-xxl-12 col-xl-7 col-lg-9 col-md-12 col-12 mb-4 mx-auto">
-                            <div class="w-100"><img src="img/main-swiper-car/out-name.png" alt=""></div>
-                            <img class="d-block mx-auto" src="img/main-swiper-car/outlander.png" alt="">
+                            <div class="configurator__container-img-name text-big text_500"></div>
+                            <img class="d-block mx-auto configurator__container-img col-10 mx-auto" src="img/main-swiper-car/outlander.png" alt="">
                         </div>
                         <div class="d-flex flex-wrap">
                             <div class="col-12 col-md-7">
@@ -739,9 +615,9 @@
                             </div>
                             <div class="col-12 col-md-5">
                                 <div class="col-12 col-lg-10">
-                                    <button class="bg_red col-12 btn_all">ДАЛЕЕ</button>
+                                    <button class="bg_red col-12 btn_all configuration_btn-next3">ДАЛЕЕ</button>
                                     <div class="p-4 bg_light-gray">
-                                        <p class="title-36 text-upper text_500 mb-2">Outlander</p>
+                                        <p class="title-36 text-upper text_500 mb-2 configurator__container-img-name">Outlander</p>
                                         <div class="d-flex justify-content-between mb-2">
                                             <p>Двигатель</p>
                                             <p class="text-big text_500">2.4 L MIVEC</p>
@@ -777,51 +653,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <div class="container mb-5">
-                    <div class="container_inner">
-                        <div class="d-flex align-items-center flex-wrap">
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg"  height="35" viewBox="0 0 190 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0H177.979L189.243 17.5L177.979 35H0V0Z" fill="#BFC2C4" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Автомобиль</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="352" height="35" viewBox="0 0 352 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M340.147 34.5H1.14889L11.9173 17.7706L12.0915 17.5L11.9173 17.2294L1.14889 0.5H340.147L351.09 17.5L340.147 34.5Z" stroke="#BFC2C4"/>
-                                </svg>
-                                <span class="position-absolute config__pointer-text text-white">Двигатель, КПП, трансмиссия</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="274" height="35" viewBox="0 0 274 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M261.735 34.5H1.58835L12.3568 17.7706L12.531 17.5L12.3568 17.2294L1.58835 0.5H261.735L272.678 17.5L261.735 34.5Z" stroke="#BFC2C4"/>
-                                </svg>           
-                                <span class="position-absolute config__pointer-text text-white">Комплектация и цвет</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="264" height="35" viewBox="0 0 264 35" fill="#BFC2C4" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M252.311 34.5H1.17624L11.9447 17.7706L12.1189 17.5L11.9447 17.2294L1.17624 0.5H252.311L263.254 17.5L252.311 34.5Z" stroke="#BFC2C4"/>
-                                    </svg>                
-                                <span class="position-absolute config__pointer-text text-white">Опции и аксессуары</span>
-                            </a>
-                            <a class="position-relative config__pointer mb-3">
-                                <svg class="config__pointer-svg" width="127" height="35" viewBox="0 0 127 35" fill="#ED0000" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75436 0.5H126.5V34.5H1.75436L12.5228 17.7706L12.697 17.5L12.5228 17.2294L1.75436 0.5Z" stroke="#BFC2C4"/>
-                                </svg>    
-                                <span class="position-absolute config__pointer-text text-white">Готово</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mb-7">
+
+                <div id="step5" class="container mb-7 configurator__container">
                     <div class="container_inner">
                         <div class=" col-xxl-12 col-xl-7 col-lg-9 col-md-12 col-12 mb-4 mx-auto">
-                            <div class="w-100"><img src="img/main-swiper-car/out-name.png" alt=""></div>
-                            <img class="d-block mx-auto" src="img/main-swiper-car/outlander.png" alt="">
+                            <div class="configurator__container-img-name text-big text_500"></div>
+                            <img class="d-block mx-auto configurator__container-img col-10 mx-auto" src="img/main-swiper-car/outlander.png" alt="">
                         </div>
                         <div class="d-flex flex-wrap mb-5">
                             <div class="col-12 col-md-7">
