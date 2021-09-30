@@ -377,6 +377,14 @@ p {
     display: unset;
 }
 
+.btn_search {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-align: left;
+}
+
 
 
 .text_white {
@@ -4060,6 +4068,10 @@ thead {
 
 
 @media (max-width: 575px) {
+
+    .dropdown_link {
+        font-size: 12px;
+    }
 
     .epts-img {
         max-width: 75%;
