@@ -657,7 +657,7 @@ p {
     border-color: #BFC2C4;
 }
 
-.configurator__container {
+.container.configurator__container {
     display: none;
 }
 
