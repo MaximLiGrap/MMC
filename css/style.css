@@ -708,6 +708,15 @@ p {
 .configurator__btn-param.active {
     background-color: #E3E5E6;
 }
+
+
+.mmc-bank__content {
+    display: none;
+}
+
+.mmc-bank__content.active {
+    display: block;
+}
 /* Выпадашки */
 
 .dropdown_btn {

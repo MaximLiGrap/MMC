@@ -86,6 +86,23 @@ if (document.querySelector('.old-auto_photo-wrapper')) {
     }
 }
 
+// ММС Банк
+document.querySelector('.mmc-bank__btn-wraper').addEventListener('click', function(event){
+    if(event.target.closest('.mmc-bank__btn')) {
+        let imgs = document.querySelectorAll('.mmc-bank__content');
+        let index = [...document.querySelectorAll('.mmc-bank__btn')].indexOf(event.target);
+        for (let img of imgs) {
+            img.classList.remove('active')
+        }
+        for (let btn of document.querySelectorAll('.mmc-bank__btn')) {
+            btn.classList.remove('active')
+        }
+        event.target.closest('.mmc-bank__btn').classList.add('active')
+        imgs[index].classList.add('active')
+        
+    }
+})
+
 
 
 
@@ -1128,6 +1145,7 @@ if (document.querySelector('.configutator-menu')){
             for(let i = 1; i < (menuItem.length - index); i++) {
                 console.log(menuItem[index+i])
                 menuItem[index+i].classList.remove('pre-active')
+                
             }
 
             pages[index].classList.add('active')
