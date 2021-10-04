@@ -53,6 +53,12 @@ if (document.querySelector('.old-auto_photo-wrapper')) {
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
     document.querySelector('.old-auto_photo-wrapper').addEventListener('click', function(event){
+        if(document.querySelector('.galery')){
+            document.querySelector('.galery').classList.remove('d-none')
+        }
+        if(document.querySelector('.wraper-form')){
+            document.querySelector('.wraper-form').classList.add('d-none')
+        }
         if(event.target.closest('.old-auto_photo')) {
             let index = [...document.querySelectorAll('.old-auto_photo-img')].indexOf(event.target);
             console.log(index)
@@ -920,10 +926,32 @@ if (document.querySelector('.modal__btn-wraper')) {
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
     document.querySelector('.modal__btn-wraper').addEventListener('click', function(event){
-        if(event.target.closest('.modal__btn-wraper')) {
+        if(event.target.closest('.modal__btn-active')) {
             modal.style.display = "block";
+            if(document.querySelector('.galery')){
+                document.querySelector('.galery').classList.add('d-none')
+            }
+
+            if(document.querySelector('.wraper-form')) {
+                document.querySelector('.wraper-form').classList.remove('d-none')
+            }
         }
     })
+
+    // Закрыть модалку при клике на крестик
+    span.onclick = function() {
+        modal.style.display = "none";
+        cleanTable(document.querySelector('.galery_wrapper'))
+    }
+
+    // Закрыть модалку при клике вне
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        cleanTable(document.querySelector('.galery_wrapper'))
+      
+        }
+    }
     
     // Закрыть модалку при клике на крестик
 
@@ -965,6 +993,7 @@ if (document.querySelector('.photo_out-wrap') && window.innerWidth > 768) {
         modal.style.display = "none";
         eclipcePhotoGalery.destroy()
         cleanTable(document.querySelector('.galery_wrapper'))
+      
         }
     }
 }

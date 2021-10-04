@@ -2549,6 +2549,10 @@ thead {
 
 }
 
+.icon_text {
+    color: #E30000;
+    margin-right: 7px;
+}
  
  .pls_color-auto {
      display: none;
