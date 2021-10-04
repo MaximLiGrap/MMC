@@ -1406,6 +1406,7 @@ p {
 }
 
 .popap {
+    margin-left: 7px;
     background-color: #686D71;
     color: #FFFFFF;
     border-radius: 100%;
@@ -2909,6 +2910,15 @@ thead {
         padding-left: 20px;
         padding-right: 20px;       
       }
+
+
+    .form-group {
+        flex: 0 0 49%;
+    }
+
+    .form-legal {
+        margin-bottom: 20px;
+    }
 
       /* Характеристики */
 
