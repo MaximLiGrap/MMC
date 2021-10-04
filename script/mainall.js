@@ -39,7 +39,7 @@ if(document.querySelector('.old-auto_photo-container')) {
         wrapperClass: 'old-auto_photo-wrapper',
         slidesPerView: 3,
         spaceBetween: 30,
-        slidesPerGroup: 1,
+        slidesPerGroup: 2,
                 centeredSlides: true,
         navigation: {
             nextEl: ".swiper-old-auto-button-next",
@@ -913,6 +913,20 @@ if (document.querySelector('.calc_dop')) {
         modal.style.display = "none";
         }
     }
+}
+// Модалка в новых автомобилях
+if (document.querySelector('.modal__btn-wraper')) {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    document.querySelector('.modal__btn-wraper').addEventListener('click', function(event){
+        if(event.target.closest('.modal__btn-wraper')) {
+            modal.style.display = "block";
+        }
+    })
+    
+    // Закрыть модалку при клике на крестик
+
 }
 
 
