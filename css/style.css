@@ -81,6 +81,24 @@ a:hover {
     color: #FFFFFF;
 }
 
+input.btn_all:hover {
+    background-color: #FFFFFF;
+    color: #686D71;
+}
+
+textarea.btn_all:hover {
+    background-color: #FFFFFF;
+    color: #686D71;
+}
+
+select.btn_all:hover {
+    background-color: #FFFFFF;
+    color: #686D71;
+}
+
+
+
+
 
 body {
     font-family: "MMC";
