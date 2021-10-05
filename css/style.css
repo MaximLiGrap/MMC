@@ -96,6 +96,34 @@ select.btn_all:hover {
     color: #686D71;
 }
 
+.form-group .form-control {
+    border: 1px solid #686D71;
+    border-radius: unset;
+    display: block;
+    padding: 7px;
+    padding-left: 25px;
+    width: 70%;
+    text-align: left;
+    
+}
+
+.form-car-item .car_name {
+    width: 100%;
+    position: unset;
+}
+
+.form-car-item {
+    margin-bottom: 30px;
+}
+
+.select2-results__options {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
 
 
 
