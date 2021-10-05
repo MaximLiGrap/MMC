@@ -101,11 +101,10 @@ select.btn_all:hover {
     border-radius: unset;
     display: block;
     padding: 7px;
-    padding-left: 25px;
     width: 70%;
+    padding-left: 25px;
     text-align: left;
     color: #686D71;
-    
 }
 
 .form-group .select2 {
@@ -114,11 +113,21 @@ select.btn_all:hover {
     display: block;
     padding: 7px;
     padding-left: 25px;
-    width: 70%;
     text-align: left;
     color: #686D71;
     cursor: pointer;
-    
+    width: 70%;
+}
+
+.form-group .form-control.form_input {
+    border: 1px solid #686D71;
+    border-radius: unset;
+    display: block;
+    padding: 7px;
+    width: 100%;
+    padding-left: 25px;
+    text-align: left;
+    color: #686D71;
 }
 
 .form-car-item .car_name {
@@ -160,6 +169,7 @@ select.btn_all:hover {
 .select2-selection.select2-selection--single {
     width: 100%;
     display: block;
+    position: relative;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -209,6 +219,15 @@ select.btn_all:hover {
 
 .form-group__textarea {
     flex: 0 0 49%;
+}
+
+#mob_block {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
 }
 
 
