@@ -117,6 +117,7 @@ select.btn_all:hover {
     width: 70%;
     text-align: left;
     color: #686D71;
+    cursor: pointer;
     
 }
 
@@ -137,6 +138,7 @@ select.btn_all:hover {
     max-height: 300px;
     overflow: auto;
     background-color: white;
+    border: 1px solid #686D71;
 }
 
 .select2-results__option {
@@ -144,6 +146,46 @@ select.btn_all:hover {
     line-height: 16px;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+.select2-results__option:hover {
+    background-color: #ED0000;
+    color: white;
+}
+
+.select2-search__field {
+    width: 100%;
+}
+
+.select2-selection.select2-selection--single {
+    width: 100%;
+    display: block;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 4px 5px 4px;
 }
 
 .form-group {
@@ -163,6 +205,10 @@ select.btn_all:hover {
 .btn-dark.btn-map.hidden-md-up {
     width: 30px;
     height: 30px;
+}
+
+.form-group__textarea {
+    flex: 0 0 49%;
 }
 
 
@@ -3006,9 +3052,6 @@ thead {
       }
 
 
-    .form-group {
-        flex: 0 0 49%;
-    }
 
     .form-legal {
         margin-bottom: 20px;
