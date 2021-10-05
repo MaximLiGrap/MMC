@@ -130,6 +130,17 @@ select.btn_all:hover {
     color: #686D71;
 }
 
+.form-group .form-control.form_area {
+    border: 1px solid #686D71;
+    border-radius: unset;
+    display: block;
+    padding: 7px;
+    width: 100%;
+    padding-left: 25px;
+    text-align: left;
+    color: #686D71;
+}
+
 .form-car-item .car_name {
     width: 100%;
     position: unset;
