@@ -104,12 +104,29 @@ select.btn_all:hover {
     padding-left: 25px;
     width: 70%;
     text-align: left;
+    color: #686D71;
+    
+}
+
+.form-group .select2 {
+    border: 1px solid #686D71;
+    border-radius: unset;
+    display: block;
+    padding: 7px;
+    padding-left: 25px;
+    width: 70%;
+    text-align: left;
+    color: #686D71;
     
 }
 
 .form-car-item .car_name {
     width: 100%;
     position: unset;
+}
+
+.form-car-item.active {
+    background-color: #F5F5F5;
 }
 
 .form-car-item {
@@ -122,10 +139,31 @@ select.btn_all:hover {
     background-color: white;
 }
 
+.select2-results__option {
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .form-group {
     margin-bottom: 30px;
 }
 
+.form-group .btn-danger {
+    width: 47%;
+    background-color: #ED0000;
+    border-color: #ED0000;
+}
+
+.form-group.form-legal {
+    margin-bottom: 30px;
+}
+
+.btn-dark.btn-map.hidden-md-up {
+    width: 30px;
+    height: 30px;
+}
 
 
 
