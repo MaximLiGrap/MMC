@@ -130,6 +130,7 @@ select.btn_all:hover {
     color: #686D71;
 }
 
+
 .form-group .form-control.form_area {
     border: 1px solid #686D71;
     border-radius: unset;
@@ -142,7 +143,7 @@ select.btn_all:hover {
 }
 
 .form-car-item .car_name {
-    width: 100%;
+    max-width: 100%;
     position: unset;
 }
 
@@ -157,7 +158,7 @@ select.btn_all:hover {
 .select2-results__options {
     max-height: 200px;
     overflow: auto;
-    list-style: none;
+    padding-left: unset;
 }
 
 .select2-container {
@@ -222,7 +223,7 @@ select.btn_all:hover {
     margin-left: -4px;
     margin-top: -2px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 0;
 }
 
@@ -277,6 +278,96 @@ select.btn_all:hover {
     left: 0;
     background: rgba(0,0,0,.6);
 }
+
+.form-group .checkbox+label {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+}
+
+.form-group .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.form-group.text-center {
+    width: 70%;
+}
+
+.form-group .form-car-select  {
+    width: 70%;
+}
+
+.form-group.form-legal {
+    width: 70%;
+}
+
+.form_inner[data-yareachgoal= Zapis_na_TO] .form-group.form-legal {
+    width: 100%;
+}
+
+.form_inner[data-yareachgoal= Zapis_na_TO] .form-group.text-center {
+    width: 100%;
+}
+
+.form-group .checkbox+label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #686D71;
+    box-shadow: inset 0 2px 3px rgb(0 0 0 / 20%);
+    transition: .2s;
+}
+
+.form-group .checkbox+label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    transition: .2s;
+}
+
+.form-group .checkbox:checked+label:after {
+    left: 26px;
+}
+
+.form-group .checkbox:checked+label:before {
+    background: #E30000;
+}
+
+.form-group .checkbox+label span.bool.false, .form-group .checkbox:checked+label span.bool.true {
+    display: unset;
+}
+
+.form-group .checkbox+label span.bool.true, .form-group .checkbox:checked+label span.bool.false {
+    display: none;
+}
+
+
+/* Балон */
+
+/* #map .ymaps-2-1-79-balloon__layout {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 80%;
+}
+
+#map .ymaps-2-1-79-balloon__content {
+    background-color: unset;
+    color: white;
+    height: 80%;
+} */
 
 
 
@@ -4503,6 +4594,26 @@ thead {
 }
 
 @media (max-width: 540px) {
+
+    .form-group.text-center {
+        width: 100%;
+    }
+    
+    .form-group .form-car-select  {
+        width: 100%;
+    }
+    
+    .form-group.form-legal {
+        width: 100%;
+    }
+
+    .form-group .form-control {
+        width: 100%;
+    }
+
+    .form-group .btn-danger {
+        width: 100%;
+    }
 
     .text-small {
         font-size: 10px;
