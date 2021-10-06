@@ -64,13 +64,13 @@ function createElementBaloon (map) {
     })
 }
 
-if(document.getElementById('map')) {
-    document.getElementById('map').addEventListener('click', function(event){
-        if(event.target.closest('.ymaps-2-1-79-image')) {
+if (document.querySelector('.ymaps-2-1-79-map')) {
+    document.querySelector('.ymaps-2-1-79-map').addEventListener('click', function(event){ // клик по карте
+        if(event.target.closest('.ymaps-2-1-79-image')) { // клик по маркеру
             if(document.querySelector('.diler-name')) {
-                document.querySelector('.diler-name').remove();
+                document.querySelector('.diler-name').remove(); // удаление старого блока
             }
-            const baloon = createElementBaloon (document.getElementById('map_block'));
+            const baloon = createElementBaloon (document.getElementById('map_block'));  // создание блока и заполнение
             baloon.firstBlokText1.textContent = document.querySelector('.ymaps-2-1-79-balloon__content').querySelectorAll('tr')[0].textContent;
             baloon.firstBlokText2.textContent = document.querySelector('.ymaps-2-1-79-balloon__content').querySelectorAll('tr')[1].textContent;
             baloon.blok3Text1Link.textContent = document.querySelector('.ymaps-2-1-79-balloon__content').querySelectorAll('tr')[2].querySelectorAll('a')[0].textContent;
@@ -79,3 +79,5 @@ if(document.getElementById('map')) {
         }
     })
 }
+
+
