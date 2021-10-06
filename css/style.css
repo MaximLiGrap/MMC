@@ -379,6 +379,11 @@ select.btn_all:hover {
 }
 
 
+.diler__select-city {
+    flex: 0 0 30%;
+}
+
+
 
 body {
     font-family: "MMC";
@@ -4609,6 +4614,10 @@ thead {
 }
 
 @media (max-width: 540px) {
+
+    .diler__select-city {
+        flex: 0 0 auto;
+    }
 
     .form-group.text-center {
         width: 100%;
