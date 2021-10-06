@@ -369,6 +369,15 @@ select.btn_all:hover {
     height: 80%;
 } */
 
+.diler__flex {
+    flex: 0 0 20%;
+}
+
+.diler__flex-btn {
+    width: 50%;
+    margin: 0 auto;
+}
+
 
 
 body {
@@ -4057,6 +4066,12 @@ thead {
 }
 
 @media (max-width: 768px) {
+
+    
+.diler__flex {
+    flex: 0 0 30%;
+}
+
 
     .epts-img {
         max-width: 60%;
