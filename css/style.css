@@ -23,6 +23,15 @@
     font-style: normal;
 }
 
+.popupbanner {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    top: 0;
+    z-index: 100000;
+}
+
 img[src*=mediainstinct], img[width="1"][height="1"]{ 
     float:left; 
 }

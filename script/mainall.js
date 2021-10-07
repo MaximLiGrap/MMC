@@ -1328,3 +1328,13 @@ if (document.querySelector('.nobr')) {
     })
 }
 
+
+// попап
+
+if (document.querySelector('.popupbanner')) {
+    document.querySelector('.popupbannerbox').style = " ";
+    document.querySelector('.popupbannerbox').addEventListener('click', function() {
+        document.querySelector('.popupbanner').classList.add('d-none')
+    })
+}
+
