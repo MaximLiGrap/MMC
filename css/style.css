@@ -1537,7 +1537,6 @@ p {
 
 .container_special {
     display: flex;
-    flex-wrap: wrap;
 }
 .special {
     flex-direction: column;
