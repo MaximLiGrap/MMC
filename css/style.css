@@ -689,6 +689,9 @@ p {
 .form-legal [data-toggle=collapse] .less, .form-legal [data-toggle=collapse].collapsed .more {
     display: unset;
 } */
+.nobr .less {
+    display: none;
+}
 
 .nobr.active .less {
     display: unset;
