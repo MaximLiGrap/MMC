@@ -690,6 +690,14 @@ p {
     display: unset;
 }
 
+.nobr.active .less {
+    display: unset;
+}
+
+.nobr.active .more {
+    display: none;
+}
+
 .btn_search {
     font-size: 14px;
     font-style: normal;

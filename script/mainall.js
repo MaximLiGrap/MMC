@@ -1319,3 +1319,12 @@ if (document.querySelector('.configuration_btn-next3')) {
 
 }
 
+
+// Легал
+if (document.querySelector('.nobr')) {
+    document.querySelector('.nobr').addEventListener('click', function() {
+        document.querySelector('.nobr').classList.toggle('active')
+        document.querySelector('.end').classList.toggle('show')
+    })
+}
+
