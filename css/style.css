@@ -34,12 +34,46 @@
 
 .popupbannerbox {
     margin: 10%;
+    position: relative;
 }
 
 .popupbannerbox img {
     margin: 0 auto;
     display: block;
 }
+
+.popupbannerclose {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.popupbannerclose::before {
+    position: absolute;
+    top: 15px;
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+    transform: rotate(45deg) translate(-6px, -6px) ;
+}
+.popupbannerclose::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    -webkit-transform: rotate(-45deg) translate(-7px, 5px) ;
+    transform: rotate(-45deg) translate(-6px, 5px) ;
+   
+}
+
+
+
+
 
 img[src*=mediainstinct], img[width="1"][height="1"]{ 
     float:left; 
@@ -755,7 +789,6 @@ p {
 .text-right {
     text-align: right;
 }
-
 
 .container {
     padding-left: 1rem;
