@@ -682,13 +682,13 @@ p {
     color:gray;
 }
 
-.form-legal [data-toggle=collapse] .more, .form-legal [data-toggle=collapse].collapsed .less {
+/* .form-legal [data-toggle=collapse] .more, .form-legal [data-toggle=collapse].collapsed .less {
     display: none;
 }
 
 .form-legal [data-toggle=collapse] .less, .form-legal [data-toggle=collapse].collapsed .more {
     display: unset;
-}
+} */
 
 .nobr.active .less {
     display: unset;
@@ -2515,7 +2515,6 @@ thead {
 
 .container_special {
    display: flex;
-   flex-wrap: wrap;
 }
 
 .swiper-button-next-equiment, .swiper-button-prev-equiment {
