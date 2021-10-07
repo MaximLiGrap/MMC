@@ -32,6 +32,15 @@
     z-index: 100000;
 }
 
+.popupbannerbox {
+    margin: 10%;
+}
+
+.popupbannerbox img {
+    margin: 0 auto;
+    display: block;
+}
+
 img[src*=mediainstinct], img[width="1"][height="1"]{ 
     float:left; 
 }
