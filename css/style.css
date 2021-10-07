@@ -709,6 +709,23 @@ p {
     text-align: left;
 }
 
+.news_tabs {
+    padding-top: 250px;
+}
+
+.news_text_inner a {
+    color: black;
+}
+
+.news_sort_nav li a {
+    color: black;
+}
+
+.news_sort_nav li.active {
+    background: #686D71;
+    color: white;
+}
+
 
 
 .text_white {
@@ -3568,6 +3585,9 @@ thead {
     
 
     .container_pt {
+        padding-top: 100px;
+    }
+    .news_tabs {
         padding-top: 100px;
     }
     .head {
