@@ -96,6 +96,10 @@ select.btn_all:hover {
     color: #686D71;
 }
 
+.swiper-container {
+    width: 100%;
+}
+
 .form-group .form-control {
     border: 1px solid #686D71;
     border-radius: unset;
