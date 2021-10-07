@@ -1240,7 +1240,7 @@ p {
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 /* Хиро блок поверх слайда */
@@ -3175,6 +3175,10 @@ thead {
 }
 
 @media (max-width: 1200px) {
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 4vw;
+    }
 
     .wraper_table {
         overflow: auto;
