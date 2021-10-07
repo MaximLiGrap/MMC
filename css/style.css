@@ -355,6 +355,8 @@ select.btn_all:hover {
 }
 
 
+
+
 /* Балон */
 
 /* #map .ymaps-2-1-79-balloon__layout {
@@ -381,6 +383,10 @@ select.btn_all:hover {
 
 .diler__select-city {
     flex: 0 0 30%;
+}
+
+.diler__select-city .form-group .select2 {
+    width: 100% !important;
 }
 
 
@@ -2151,9 +2157,11 @@ thead {
     }
   
   
-    .checkbox__label {
+    .checkbox__box  .checkbox__label {
       display: flex;
       align-items: center;
+      width: auto;
+      flex: 0 0 auto;
     }
   
     .checkbox__name {
@@ -3138,6 +3146,10 @@ thead {
 
 @media (max-width: 1200px) {
 
+    .wraper_table {
+        overflow: auto;
+    }
+
     .checkbox__label {
         width:calc( ( 100% - 20px ) / 2 );
     }
@@ -3340,6 +3352,10 @@ thead {
 
 
 @media (max-width: 991px) {
+
+    .diler__select-city {
+        flex: 0 0 40%;
+    }
 
     #mob_block {
         display: block;
