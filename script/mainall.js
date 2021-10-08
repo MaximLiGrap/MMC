@@ -1341,7 +1341,7 @@ if (document.querySelector('.popupbanner')) {
 
 // для дилерских сайтов
 
-if(document.querySelector('.head-white')) {
+if(document.querySelector('.head-white') && document.querySelector('.hero')) {
     let height = document.querySelector('.head-white').clientHeight;
     console.log(height)
     document.querySelector('.hero').style.paddingTop = `${height}px`;
