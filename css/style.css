@@ -43,7 +43,7 @@
 }
 
 .popupbannerclose {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
 }
@@ -4720,7 +4720,7 @@ thead {
 @media (max-width: 540px) {
 
     .diler__select-city {
-        flex: 0 0 auto;
+        flex: 0 0 50%;
     }
 
     .form-group.text-center {
@@ -4746,6 +4746,7 @@ thead {
     .text-small {
         font-size: 10px;
     }
+    
 
     .mb-8 {
         margin-bottom: 20px;
