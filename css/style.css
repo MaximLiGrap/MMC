@@ -43,9 +43,10 @@
 }
 
 .popupbannerclose {
+    cursor: pointer;
     position: absolute;
     top: 0;
-    right: 30px;
+    right: 0;
 }
 
 .popupbannerclose::before {
