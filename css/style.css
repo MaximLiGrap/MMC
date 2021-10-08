@@ -75,7 +75,9 @@
    
 }
 
-
+.container.p-5 {
+    margin-top: 100px;
+}
 
 
 
@@ -1547,6 +1549,23 @@ img.car_name{
     left: 0;  
 }
 
+
+#step-order {
+    margin: 0 auto;
+}
+
+#step-order span.select2.select2-container {
+    width: unset !important;
+}
+
+.btn.btn-danger.Konfigurator {
+    border-radius: unset;
+}
+
+#credit-online-url {
+    border-radius: unset;
+}
+
 .car_name-out {
     max-width: 20%;
     left: 30%;
@@ -2721,7 +2740,7 @@ thead {
  }
  
  .block_map {
-     background-image: url("../img/EclipseCross/Mainimage.png");
+     background-image: url("../img/eclipse_cross/Mainimage.png");
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;

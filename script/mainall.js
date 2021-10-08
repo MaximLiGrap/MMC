@@ -1346,3 +1346,7 @@ if(document.querySelector('.head-white') && document.querySelector('.hero')) {
     console.log(height)
     document.querySelector('.hero').style.paddingTop = `${height}px`;
 }
+
+if(document.getElementById('wrapper')) {
+    document.getElementById('wrapper').style.height = "0";
+}
