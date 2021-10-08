@@ -1336,10 +1336,6 @@ if (document.querySelector('.popupbanner')) {
         e.preventDefault()
         document.querySelector('.popupbanner').classList.add('d-none')
     })
-    document.querySelector('.popupbannerclose').addEventListener('click', function(e) {
-        e.preventDefault()
-        document.querySelector('.popupbanner').classList.add('d-none')
-    })
 }
 
 
