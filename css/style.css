@@ -1539,8 +1539,7 @@ p {
     bottom: -20%;
 }
 
-.car_name{
- 
+img.car_name{
     max-width: 30%;
     position: absolute;
     z-index: 2;
@@ -1801,6 +1800,7 @@ p {
 #special_bullets {
     width: max-content;
     margin: 0 auto;
+    
 }
 
 .popap {
@@ -1964,6 +1964,7 @@ cursor: pointer;
 
 .galery-img {
     flex-shrink: 0;
+    height: 60vh;
 }
 
 
