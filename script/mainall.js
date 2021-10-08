@@ -1332,7 +1332,12 @@ if (document.querySelector('.nobr')) {
 // попап
 
 if (document.querySelector('.popupbanner')) {
-    document.querySelector('.popupbanner').addEventListener('click', function() {
+    document.querySelector('.popupbannerbox').addEventListener('click', function(e) {
+        e.preventDefault()
+        document.querySelector('.popupbanner').classList.add('d-none')
+    })
+    document.querySelector('.popupbannerclose').addEventListener('click', function(e) {
+        e.preventDefault()
         document.querySelector('.popupbanner').classList.add('d-none')
     })
 }
