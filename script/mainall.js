@@ -1360,6 +1360,6 @@ if(document.getElementById('wrapper')) {
 if(document.querySelector('.usermenu')) {
     let height = document.querySelector('.head').clientHeight;
     console.log(height)
-    document.querySelector('.hero').classList.remove('p-0')
-    document.querySelector('.hero').style.marginTop = `${height}px`;
+    
+    document.querySelector('.usermenu').style.marginTop = `${height}px`;
 }
