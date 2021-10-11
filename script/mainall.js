@@ -1356,3 +1356,10 @@ if(document.querySelector('.head-white') && document.querySelector('.hero')) {
 if(document.getElementById('wrapper')) {
     document.getElementById('wrapper').style.height = "0";
 }
+
+if(document.querySelector('.usermenu')) {
+    let height = document.querySelector('.head').clientHeight;
+    console.log(height)
+    document.querySelector('.hero').classList.remove('p-0')
+    document.querySelector('.hero').style.marginTop = `${height}px`;
+}

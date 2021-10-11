@@ -192,6 +192,19 @@ select.btn_all:hover {
     color: #686D71;
 }
 
+.col-12.col-md-6 .form-group .form-control {
+    width: 100%;
+}
+
+.col-md-7 .form-group .form-control {
+    width: 100%;
+}
+
+.dealer_block .delete {
+    position: unset !important;
+}
+
+
 .form-group .select2 {
     border: 1px solid #686D71;
     border-radius: unset;
@@ -202,6 +215,30 @@ select.btn_all:hover {
     color: #686D71;
     cursor: pointer;
     width: 70% !important;
+}
+
+.form .select2 {
+    border: 1px solid #686D71;
+    border-radius: unset;
+    display: block;
+    padding: 7px;
+    padding-left: 25px;
+    text-align: left;
+    color: #686D71;
+    cursor: pointer;
+    width: 70% !important;
+}
+
+.col-12.col-md-6 .form-group .select2 {
+    width: 100% !important;
+}
+
+.col-12.col-md-6 .form .select2 {
+    width: 100% !important;
+}
+
+.col-md-7 .form-group .select2 {
+    width: 100% !important;
 }
 
 .form-group .form-control.form_input {
