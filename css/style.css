@@ -125,6 +125,29 @@ a:hover {
     color: #ED0000;
 }
 
+.work_labor {
+    overflow: auto !important;
+}
+
+.table-redhead th {
+    color: black !important;
+}
+
+.garage_car_block {
+    overflow: auto !important;
+}
+
+.garage_car {
+    padding: 20px 20px !important;
+}
+
+ul.top-tabs {
+    border-radius: unset !important;
+}
+
+ul.top-tabs li.active {
+    border-radius: unset !important;
+}
 .btn:hover {
     /* background-color: #686D71;
     opacity: 50%; */
@@ -178,7 +201,7 @@ select.btn_all:hover {
     text-align: left;
     color: #686D71;
     cursor: pointer;
-    width: 70%;
+    width: 70% !important;
 }
 
 .form-group .form-control.form_input {
@@ -4764,6 +4787,10 @@ thead {
 
     .form-group .form-control {
         width: 100%;
+    }
+
+    .form-group .select2 {
+        width: 100% !important;
     }
 
     .form-group .btn-danger {

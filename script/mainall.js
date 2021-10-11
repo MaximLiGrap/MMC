@@ -157,39 +157,39 @@ if (window.innerWidth>991) {
     let hoverAria = document.getElementById('dropdown_auto');
 if (document.querySelector(".link_asx")) {
     document.querySelector(".link_asx").addEventListener('mouseover', function(){
-        hoverAria.style = 'background-image: url("img/main-swiper-car/car-iqons/asx.png"); background-size: 25%;'
+        hoverAria.style = 'background-image: url("/html/mmc-2021/img/main-swiper-car/car-iqons/asx.png"); background-size: 25%;'
     })
 }
 
 if (document.querySelector(".link_eclipse")) {
     document.querySelector(".link_eclipse").addEventListener('mouseover', function(){
-        hoverAria.style = 'background-image: url("img/main-swiper-car/car-iqons/EclipsCrossImage.png"); background-size: 25%;'
+        hoverAria.style = 'background-image: url("/html/mmc-2021/img/main-swiper-car/car-iqons/EclipsCrossImage.png"); background-size: 25%;'
         
     })
 }
 
 if (document.querySelector(".link_out")) {
     document.querySelector(".link_out").addEventListener('mouseover', function(){
-        hoverAria.style = 'background-image: url("img/main-swiper-car/car-iqons/outlander.png"); background-size: 25%;'
+        hoverAria.style = 'background-image: url("/html/mmc-2021/img/main-swiper-car/car-iqons/outlander.png"); background-size: 25%;'
         
     })
 }
 
 if (document.querySelector(".link_pjs")) {
     document.querySelector(".link_pjs").addEventListener('mouseover', function(){
-        hoverAria.style = 'background-image: url("img/main-swiper-car/car-iqons/pajero-sport.png"); background-size: 25%;'
+        hoverAria.style = 'background-image: url("/html/mmc-2021/img/main-swiper-car/car-iqons/pajero-sport.png"); background-size: 25%;'
     })
 }
 
 if (document.querySelector(".link_out7")) {
     document.querySelector(".link_out7").addEventListener('mouseover', function(){
-        hoverAria.style = 'background-image: url("img/main-swiper-car/car-iqons/outlander21-7seats.png"); background-size: 25%;'
+        hoverAria.style = 'background-image: url("/html/mmc-2021/img/main-swiper-car/car-iqons/outlander21-7seats.png"); background-size: 25%;'
     })
 }
 
 if (document.querySelector(".link_l200")) {
     document.querySelector(".link_l200").addEventListener('mouseover', function(){
-        hoverAria.style = 'background-image: url("img/main-swiper-car/car-iqons/l200car.png"); background-size: 25%;'
+        hoverAria.style = 'background-image: url("/html/mmc-2021/img/main-swiper-car/car-iqons/l200car.png"); background-size: 25%;'
     })
 }
 }
