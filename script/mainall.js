@@ -662,38 +662,43 @@ window.addEventListener('resize', () =>{
 })
 
 
-const btnText1 = document.getElementById('charact-btn1');
-const text1 = document.getElementById('charact_card-text1');
+if (document.getElementById('charact-btn1')) {
+    const btnText1 = document.getElementById('charact-btn1');
+    const text1 = document.getElementById('charact_card-text1');
 
-let i=1;
-if (btnText1 && text1) {
-    btnText1.addEventListener('click', function() {
-        text1.classList.toggle('charact_card-text-visible');
-        i++;
-        if(i%2 === 0) {
-            btnText1.textContent = 'Скрыть';
-        } else {
-            btnText1.textContent = 'Подробнее';
-        }
-    
-    })
+    let i=1;
+    if (btnText1 && text1) {
+        btnText1.addEventListener('click', function() {
+            text1.classList.toggle('charact_card-text-visible');
+            i++;
+            if(i%2 === 0) {
+                btnText1.textContent = 'Скрыть';
+            } else {
+                btnText1.textContent = 'Подробнее';
+            }
+        
+        })
+    }
 }
 
-const btnText2 = document.getElementById('charact-btn2');
-const text2 = document.getElementById('charact_card-text2');
-let j=1;
-if (btnText2 && text2) {
-    btnText2.addEventListener('click', function() {
-        text2.classList.toggle('charact_card-text-visible');
-        j++;
-        if(j%2 === 0) {
-            btnText2.textContent = 'Скрыть';
-        } else {
-            btnText2.textContent = 'Подробнее';
-        }
-    
-    })
+if (document.getElementById('charact-btn2')) {
+    const btnText2 = document.getElementById('charact-btn2');
+    const text2 = document.getElementById('charact_card-text2');
+    let j=1;
+    if (btnText2 && text2) {
+        btnText2.addEventListener('click', function() {
+            text2.classList.toggle('charact_card-text-visible');
+            j++;
+            if(j%2 === 0) {
+                btnText2.textContent = 'Скрыть';
+            } else {
+                btnText2.textContent = 'Подробнее';
+            }
+        
+        })
+    }
 }
+
 function accordion (btn, arrayCards, arrayBtn, classActive, card) {
     document.getElementById(btn).addEventListener('click', function(){
         for( let btn of document.querySelectorAll(arrayBtn)){
@@ -1344,6 +1349,7 @@ if (document.querySelector('.popupbanner')) {
 if(document.querySelector('.head-white') && document.querySelector('.hero')) {
     let height = document.querySelector('.head-white').clientHeight;
     console.log(height)
+    document.querySelector('.hero').classList.remove('p-0')
     document.querySelector('.hero').style.paddingTop = `${height}px`;
 }
 
