@@ -1353,13 +1353,38 @@ if(document.querySelector('.head-white') && document.querySelector('.hero')) {
     document.querySelector('.hero').style.paddingTop = `${height}px`;
 }
 
+// конфигуратор убрать черный квадрат
 if(document.getElementById('wrapper')) {
     document.getElementById('wrapper').style.height = "0";
 }
 
+
+// Личный кабинет меню
 if(document.querySelector('.usermenu')) {
     let height = document.querySelector('.head').clientHeight;
     console.log(height)
     
     document.querySelector('.usermenu').style.paddingTop = `${height}px`;
 }
+// Корпоративным клиентам
+if(document.querySelector('.head') && document.getElementById('carouselExampleIndicators')) {
+    let height = document.querySelector('.head').clientHeight;
+    console.log(height)
+    document.getElementById('carouselExampleIndicators').classList.remove('p-0')
+    document.getElementById('carouselExampleIndicators').classList.add('px-0')
+    document.getElementById('carouselExampleIndicators').style.paddingTop = height + "px";
+}
+
+// if(document.querySelector('.head') && document.querySelector('main')) {
+//     let height = document.querySelector('.head').clientHeight;
+//     console.log(height)
+//     let allMain = document.querySelectorAll('main');
+//     for(let main of allMain) {
+//         if(main.classList.contains('container', 'p-0')) {
+//             main.classList.remove('p-0')
+//             main.classList.add('px-0')
+//             main.style.paddingTop = height + "px";
+//             break;
+//         }
+//     }
+// }

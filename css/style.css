@@ -407,6 +407,8 @@ select.btn_all:hover {
     cursor: pointer;
 }
 
+
+
 .form-group .checkbox {
     position: absolute;
     z-index: -1;
@@ -1892,7 +1894,7 @@ img.car_name{
 }
 
 /* Модальный (фон) */
-.modal {
+#myModal.modal {
 display: none; /* Скрыто по умолчанию */
 position: fixed; /* Оставаться на месте */
 z-index: 1000; /* Сидеть на вершине */
@@ -1906,7 +1908,7 @@ background-color: rgba(0,0,0,0.4); /* Черный с непрозрачност
 }
 
 /* Модальное содержание/коробка */
-.modal-content {
+#myModal .modal-content {
 background-color: #fefefe;
 margin: 5% auto; /* 15% сверху и по центру */
 padding: 20px;
