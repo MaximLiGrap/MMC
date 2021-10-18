@@ -125,6 +125,10 @@ a:hover {
     color: #ED0000;
 }
 
+a {
+    color: #ED0000;
+}
+
 .work_labor {
     overflow: auto !important;
 }
@@ -312,6 +316,8 @@ select.btn_all:hover {
     padding-top: 3px;
     padding-bottom: 3px;
 }
+
+
 
 .select2-results__option:hover {
     background-color: #ED0000;
@@ -1626,6 +1632,18 @@ img.car_name{
 
 #credit-online-url {
     border-radius: unset;
+    background-color: #E30000;
+}
+
+#order-01 {
+    border-radius: unset;
+    background-color: #E30000;
+}
+
+.btn-danger {
+    border-radius: unset;
+    background-color: #E30000;
+    border-color: #E30000;
 }
 
 .car_name-out {
@@ -2469,6 +2487,10 @@ thead {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .charact_card-img {
+        max-width: 50%;
     }
     
     .charact_card-owertitle {
@@ -4359,13 +4381,14 @@ thead {
 .charact_card {
     flex-wrap: wrap;
 }
+
 .charact_card-text { 
     width: auto;
     margin-right: unset;
 }
 
 .charact_card-img {
-    width: auto;
+   max-width: 100%;
 }
 
 .charact_card-text {

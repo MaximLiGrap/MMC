@@ -1388,3 +1388,35 @@ if(document.querySelector('.head') && document.getElementById('carouselExampleIn
 //         }
 //     }
 // }
+
+
+if (document.querySelectorAll('.equipment_list')) {
+    for(let list of document.querySelectorAll('.equipment_list')) {
+        if(list.children.length > 7) {
+            list.classList.add('mb-5')
+            for(let i = 7; i<list.children.length; i++) {
+                list.children[i].classList.add('d-none');
+            }
+            let btn = document.createElement('button');
+            btn.textContent = 'Подробнее';
+            btn.classList.add('mb-4', 'btn_all', 'text-color-red')
+            let crut = 1;
+            console.log(list.parentElement)
+            list.parentElement.append(btn)
+
+            btn.addEventListener('click', function(event) {
+                crut = crut + 1;
+                for(let i = 7; i<list.children.length; i++) {
+                    list.children[i].classList.toggle('d-none');
+                }
+                if (crut%2 == 0) {
+                    btn.textContent = 'Скрыть'
+                } else {
+                    btn.textContent = 'Подробнее'
+                }
+
+            })
+
+        }
+    }
+}
