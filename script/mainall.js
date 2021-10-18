@@ -1392,9 +1392,9 @@ if(document.querySelector('.head') && document.getElementById('carouselExampleIn
 
 if (document.querySelectorAll('.equipment_list')) {
     for(let list of document.querySelectorAll('.equipment_list')) {
-        if(list.children.length > 3) {
+        if(list.children.length > 7) {
             list.classList.add('mb-5')
-            for(let i = 3; i<list.children.length; i++) {
+            for(let i = 7; i<list.children.length; i++) {
                 list.children[i].classList.add('d-none');
             }
         }
