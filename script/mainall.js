@@ -1399,22 +1399,20 @@ if (document.querySelectorAll('.equipment_list')) {
             }
         }
     }
-    let crut = 1;
     let cards = document.querySelector('.container_equipment');
     cards.addEventListener('click', function(event) {
         if(event.target.closest('.equipment_btn-about')) {
             console.log(event.target.parentElement.parentElement.firstElementChild.lastElementChild.children)
             event.preventDefault()
-            crut = crut + 1;
             for(let i = 7; i<event.target.parentElement.parentElement.firstElementChild.lastElementChild.children.length; i++) {
                 event.target.parentElement.parentElement.firstElementChild.lastElementChild.children[i].classList.toggle('d-none');
             }
-
-            if (crut%2 == 0) {
-                event.target.closest('.equipment_btn-about').textContent = 'Скрыть'
+            if (event.target.textContent === 'ПОДРОБНЕЕ') {
+                event.target.textContent = 'СКРЫТЬ'
             } else {
-                event.target.closest('.equipment_btn-about').textContent = 'Подробнее'
+                event.target.textContent = 'ПОДРОБНЕЕ'
             }
+     
         }
 
     })
