@@ -126,29 +126,47 @@ iqonNav.classList.toggle("change")
 });
 
 
-if(document.getElementById("auto-menu-scrol")) {
-    var scroll = 0;
-    window.onscroll = onScroll;
-    function onScroll() {
-    var top = window.pageYOffset;
-    if (scroll> 100 && !nav.classList.contains('show')) {
-        if (scroll > top + 30) {
-    
-            document.querySelector('.head').classList.remove('scrol_top');
-            document.getElementById("auto-menu-scrol").classList.remove('top0')
-        } else if (scroll < top) {
-            document.querySelector('.head').classList.add('scrol_top');
-            document.getElementById("auto-menu-scrol").classList.add('top0')
-        
-            
+if(document.querySelector(".head") && !document.getElementById("auto-menu-scrol")) {
+    window.addEventListener('scroll', function(e){
+        if(window.pageYOffset>1){
+            document.querySelector(".head").classList.add('position-fixed')
+            document.querySelector('main').style.paddingTop = document.querySelector('.head').clientHeight +  'px'
+        } if (window.pageYOffset < 1) {
+            document.querySelector(".head").classList.remove('position-fixed')
+            document.querySelector('main').style.paddingTop = 0;
         }
-    } else {
-        document.querySelector('.head').classList.remove('scrol_top');
-        document.getElementById("auto-menu-scrol").classList.remove('top0')
-    }
-    scroll = top;
-    
-    };
+    },{ passive: true })
+}
+
+if(document.getElementById("auto-menu-scrol")) {
+    var scrol = 0
+    window.addEventListener('scroll', function(e){
+        var top = window.pageYOffset;
+        if (!nav.classList.contains('show')) {
+            if(window.pageYOffset>document.querySelector('.head').clientHeight){
+                document.querySelector(".head").style.top = - document.querySelector('.head').clientHeight + 'px'
+                document.querySelector(".head").classList.add('position-fixed')
+                document.getElementById("auto-menu-scrol").classList.add('position-fixed')
+                document.querySelector('main').style.paddingTop = document.querySelector('.head').clientHeight + document.getElementById("auto-menu-scrol").clientHeight + 'px'
+                document.getElementById("auto-menu-scrol").style.top = 0;
+            } 
+            if (scrol > top) {
+                document.getElementById("auto-menu-scrol").classList.add('trans');
+                document.querySelector(".head").classList.add('trans');
+                document.querySelector(".head").style.top = 0;
+                document.getElementById("auto-menu-scrol").style.top = document.querySelector('.head').clientHeight + 'px';
+            }
+            if (window.pageYOffset == 0) {
+                console.log(window.pageYOffset)
+                document.getElementById("auto-menu-scrol").classList.remove('trans');
+                document.querySelector(".head").classList.remove('trans');
+                document.querySelector(".head").classList.remove('position-fixed')
+                document.getElementById("auto-menu-scrol").classList.remove('position-fixed', )
+                document.querySelector('main').style.paddingTop = 0;
+            }
+        }
+        scrol = top;
+    },{ passive: true })
 }
 
 
@@ -1400,20 +1418,22 @@ if (document.querySelectorAll('.equipment_list')) {
         }
     }
     let cards = document.querySelector('.container_equipment');
-    cards.addEventListener('click', function(event) {
-        if(event.target.closest('.equipment_btn-about')) {
-            console.log(event.target.parentElement.parentElement.firstElementChild.lastElementChild.children)
-            event.preventDefault()
-            for(let i = 7; i<event.target.parentElement.parentElement.firstElementChild.lastElementChild.children.length; i++) {
-                event.target.parentElement.parentElement.firstElementChild.lastElementChild.children[i].classList.toggle('d-none');
+    if (cards) {
+        cards.addEventListener('click', function(event) {
+            if(event.target.closest('.equipment_btn-about')) {
+                console.log(event.target.parentElement.parentElement.firstElementChild.lastElementChild.children)
+                event.preventDefault()
+                for(let i = 7; i<event.target.parentElement.parentElement.firstElementChild.lastElementChild.children.length; i++) {
+                    event.target.parentElement.parentElement.firstElementChild.lastElementChild.children[i].classList.toggle('d-none');
+                }
+                if (event.target.textContent === 'ПОДРОБНЕЕ') {
+                    event.target.textContent = 'СКРЫТЬ'
+                } else {
+                    event.target.textContent = 'ПОДРОБНЕЕ'
+                }
+         
             }
-            if (event.target.textContent === 'ПОДРОБНЕЕ') {
-                event.target.textContent = 'СКРЫТЬ'
-            } else {
-                event.target.textContent = 'ПОДРОБНЕЕ'
-            }
-     
-        }
-
-    })
+    
+        })
+    }
 }
