@@ -126,49 +126,37 @@ iqonNav.classList.toggle("change")
 });
 
 
-if(document.querySelector(".head") && !document.getElementById("auto-menu-scrol")) {
-    window.addEventListener('scroll', function(e){
-        if(window.pageYOffset>1){
-            document.querySelector(".head").classList.add('position-fixed')
-            document.querySelector('main').style.paddingTop = document.querySelector('.head').clientHeight +  'px'
-        } if (window.pageYOffset < 1) {
-            document.querySelector(".head").classList.remove('position-fixed')
-            document.querySelector('main').style.paddingTop = 0;
-        }
-    },{ passive: true })
-}
+if (document.getElementById("auto-menu-scrol")) {
+    var scroll = 0;
+    window.onscroll = onScroll;
 
-if(document.getElementById("auto-menu-scrol")) {
-    var scrol = 0
-    window.addEventListener('scroll', function(e){
+    function onScroll() {
         var top = window.pageYOffset;
-        if (!nav.classList.contains('show')) {
-            if(window.pageYOffset>document.querySelector('.head').clientHeight){
-                document.querySelector(".head").style.top = - document.querySelector('.head').clientHeight + 'px'
-                document.querySelector(".head").classList.add('position-fixed')
-                document.getElementById("auto-menu-scrol").classList.add('position-fixed')
-                document.querySelector('main').style.paddingTop = document.querySelector('.head').clientHeight + document.getElementById("auto-menu-scrol").clientHeight + 'px'
-                document.getElementById("auto-menu-scrol").style.top = 0;
-            } 
-            if (scrol > top) {
-                document.getElementById("auto-menu-scrol").classList.add('trans');
-                document.querySelector(".head").classList.add('trans');
-                document.querySelector(".head").style.top = 0;
-                document.getElementById("auto-menu-scrol").style.top = document.querySelector('.head').clientHeight + 'px';
+        if (scroll > 100 && !nav.classList.contains('show')) {
+            if (scroll > top + 30) {
+
+                document.querySelector('.head').classList.remove('scrol_top');
+                document.getElementById("auto-menu-scrol").classList.remove('top0')
+            } else if (scroll < top) {
+                document.querySelector('.head').classList.add('scrol_top');
+                document.getElementById("auto-menu-scrol").classList.add('top0')
+
+
             }
-            if (window.pageYOffset == 0) {
-                console.log(window.pageYOffset)
-                document.getElementById("auto-menu-scrol").classList.remove('trans');
-                document.querySelector(".head").classList.remove('trans');
-                document.querySelector(".head").classList.remove('position-fixed')
-                document.getElementById("auto-menu-scrol").classList.remove('position-fixed', )
-                document.querySelector('main').style.paddingTop = 0;
-            }
+        } else {
+            document.querySelector('.head').classList.remove('scrol_top');
+            document.getElementById("auto-menu-scrol").classList.remove('top0')
         }
-        scrol = top;
-    },{ passive: true })
+        scroll = top;
+
+    };
 }
 
+// Задать высоту хедеру
+document.querySelector('header').style.height = document.querySelector('.head').clientHeight + 'px';
+if(document.getElementById("auto-menu-scrol")) {
+    document.querySelector('header').style.height = document.querySelector('.head').clientHeight + document.getElementById("auto-menu-scrol").clientHeight + 'px'
+}
 
 
 if (window.innerWidth>991) {
@@ -1362,51 +1350,36 @@ if (document.querySelector('.popupbanner')) {
 }
 
 
-// для дилерских сайтов
+// // для дилерских сайтов
 
-if(document.querySelector('.head-white') && document.querySelector('.hero')) {
-    let height = document.querySelector('.head-white').clientHeight;
-    console.log(height)
-    document.querySelector('.hero').classList.remove('p-0')
-    document.querySelector('.hero').style.paddingTop = `${height}px`;
-}
-
-// конфигуратор убрать черный квадрат
-if(document.getElementById('wrapper')) {
-    document.getElementById('wrapper').style.height = "0";
-}
-
-
-// Личный кабинет меню
-if(document.querySelector('.usermenu')) {
-    let height = document.querySelector('.head').clientHeight;
-    console.log(height)
-    
-    document.querySelector('.usermenu').style.paddingTop = `${height}px`;
-}
-// Корпоративным клиентам
-if(document.querySelector('.head') && document.getElementById('carouselExampleIndicators')) {
-    let height = document.querySelector('.head').clientHeight;
-    console.log(height)
-    document.getElementById('carouselExampleIndicators').classList.remove('p-0')
-    document.getElementById('carouselExampleIndicators').classList.add('px-0')
-    document.getElementById('carouselExampleIndicators').style.paddingTop = height + "px";
-}
-
-// if(document.querySelector('.head') && document.querySelector('main')) {
-//     let height = document.querySelector('.head').clientHeight;
+// if(document.querySelector('.head-white') && document.querySelector('.hero')) {
+//     let height = document.querySelector('.head-white').clientHeight;
 //     console.log(height)
-//     let allMain = document.querySelectorAll('main');
-//     for(let main of allMain) {
-//         if(main.classList.contains('container', 'p-0')) {
-//             main.classList.remove('p-0')
-//             main.classList.add('px-0')
-//             main.style.paddingTop = height + "px";
-//             break;
-//         }
-//     }
+//     document.querySelector('.hero').classList.remove('p-0')
+//     document.querySelector('.hero').style.paddingTop = `${height}px`;
 // }
 
+// // конфигуратор убрать черный квадрат
+// if(document.getElementById('wrapper')) {
+//     document.getElementById('wrapper').style.height = "0";
+// }
+
+
+// // Личный кабинет меню
+// if(document.querySelector('.usermenu')) {
+//     let height = document.querySelector('.head').clientHeight;
+//     console.log(height)
+    
+//     document.querySelector('.usermenu').style.paddingTop = `${height}px`;
+// }
+// // Корпоративным клиентам
+// if(document.querySelector('.head') && document.getElementById('carouselExampleIndicators')) {
+//     let height = document.querySelector('.head').clientHeight;
+//     console.log(height)
+//     document.getElementById('carouselExampleIndicators').classList.remove('p-0')
+//     document.getElementById('carouselExampleIndicators').classList.add('px-0')
+//     document.getElementById('carouselExampleIndicators').style.paddingTop = height + "px";
+// }
 
 if (document.querySelectorAll('.equipment_list')) {
     for(let list of document.querySelectorAll('.equipment_list')) {
